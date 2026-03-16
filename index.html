@@ -4,20 +4,6 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <script>
-window.HOT_DEALS = [
-  { from:'London',     to:'Dubai',      price:'£189', airline:'Emirates',       flag:'🇦🇪' },
-  { from:'Manchester', to:'New York',   price:'£299', airline:'Virgin Atlantic', flag:'🇺🇸' },
-  { from:'London',     to:'Nairobi',    price:'£349', airline:'Kenya Airways',   flag:'🇰🇪' },
-  { from:'Birmingham', to:'Cancún',     price:'£419', airline:'TUI',             flag:'🇲🇽' },
-  { from:'London',     to:'Bangkok',    price:'£379', airline:'Thai Airways',    flag:'🇹🇭' },
-  { from:'Edinburgh',  to:'Barcelona',  price:'£59',  airline:'Ryanair',         flag:'🇪🇸' },
-  { from:'London',     to:'Cape Town',  price:'£499', airline:'British Airways', flag:'🇿🇦' },
-  { from:'Glasgow',    to:'Ibiza',      price:'£89',  airline:'EasyJet',         flag:'🇪🇸' },
-  { from:'London',     to:'Tokyo',      price:'£549', airline:'ANA',             flag:'🇯🇵' },
-  { from:'Bristol',    to:'Lisbon',     price:'£49',  airline:'EasyJet',         flag:'🇵🇹' },
-  { from:'London',     to:'Maldives',   price:'£699', airline:'Qatar Airways',   flag:'🇲🇻' },
-  { from:'Newcastle',  to:'Amsterdam',  price:'£39',  airline:'KLM',             flag:'🇳🇱' },
-];
 </script>
 
 <title>Yasska — Flights, Hotels &amp; Packages</title>
@@ -732,7 +718,6 @@ footer { background:var(--navy); color:rgba(255,255,255,.6); padding:70px 5% 30p
   .nav-links { display:none; }
   .nav-hamburger { display:flex; }
   #nav-ticker { display:none !important; }
-  #mobile-ticker-bar { display:flex !important; position:fixed;top:60px;left:0;right:0;z-index:997; height:40px;overflow:hidden;align-items:center; background:rgba(13,27,42,.97); border-bottom:1px solid rgba(255,92,92,.2); }
   .hero { padding:112px 4% 32px; }
   .hero h1 { font-size:clamp(22px,6vw,34px); }
   .hero-sub { font-size:13px; margin-bottom:16px; }
@@ -821,20 +806,7 @@ document.addEventListener('keydown', function(e) { if (e.key === 'Escape') { win
     <div class="nav-logo-mark">✈</div>
     Yasska<span style="color:var(--gold2)">.</span>
   </a>
-  <div id="nav-ticker" style="flex:1;overflow:hidden;margin:0 20px;height:34px;display:flex;align-items:center;">
-    <div style="overflow:hidden;border-radius:20px;background:linear-gradient(135deg,rgba(255,92,92,.15),rgba(255,140,66,.1));border:1px solid rgba(255,92,92,.3);height:34px;width:100%;display:flex;align-items:center;box-shadow:0 2px 12px rgba(255,92,92,.15);">
-      <div style="flex-shrink:0;padding:0 13px;height:34px;display:flex;align-items:center;gap:5px;background:linear-gradient(135deg,#FF5C5C,#FF8C42);border-radius:20px 0 0 20px;">
-        <span style="font-size:13px">🔥</span>
-        <span style="font-size:10px;font-weight:900;color:#fff;letter-spacing:.1em;white-space:nowrap;">HOT DEALS</span>
-      </div>
-      <div style="flex:1;overflow:hidden;height:34px;display:flex;align-items:center;">
-        <div id="hticker-inner" style="display:flex;align-items:center;white-space:nowrap;animation:hticker 40s linear infinite;"></div>
-      </div>
-    </div>
-  </div>
   <div class="nav-links">
-    <a href="#destinations">Destinations</a>
-    <a href="#packages">Packages</a>
     <a href="#book" onclick="scrollToBook(event)">Book</a>
     <a href="#contact">Contact</a>
   </div>
@@ -843,24 +815,13 @@ document.addEventListener('keydown', function(e) { if (e.key === 'Escape') { win
   </div>
 </nav>
 
-<!-- MOBILE TICKER -->
-<div id="mobile-ticker-bar" style="display:none;">
-  <div style="flex-shrink:0;padding:0 14px;height:40px;display:flex;align-items:center;gap:5px;background:linear-gradient(135deg,#FF5C5C,#FF8C42);">
-    <span style="font-size:13px">🔥</span>
-    <span style="font-size:10px;font-weight:900;color:#fff;letter-spacing:.1em;white-space:nowrap;">HOT DEALS</span>
-  </div>
-  <div style="flex:1;overflow:hidden;height:40px;display:flex;align-items:center;">
-    <div id="mobile-ticker-inner" style="display:flex;align-items:center;white-space:nowrap;animation:hticker 60s linear infinite;"></div>
-  </div>
-</div>
-
 <!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-orb orb1"></div>
   <div class="hero-orb orb2"></div>
   <div class="hero-orb orb3"></div>
   <div class="hero-inner">
-    <div class="hero-eyebrow"><span></span> Award-Winning Travel Agency Since 2023</div>
+
     <div style="font-family:'Playfair Display',serif;font-size:clamp(14px,1.8vw,20px);font-weight:400;color:rgba(255,255,255,.5);letter-spacing:.25em;text-transform:uppercase;margin-bottom:6px;">Yasska.</div>
     <h1>Welcome To<br/><em>Yasska</em> Travel Agency</h1>
     <p class="hero-sub">Flights, hotels and curated travel packages to over 150 destinations. We handle every detail so you can focus on the journey.</p>
@@ -1071,8 +1032,6 @@ document.addEventListener('keydown', function(e) { if (e.key === 'Escape') { win
       <div class="stat-div"></div>
       <div class="stat-item"><div class="stat-num">48K+</div><div class="stat-lbl">Happy Travellers</div></div>
       <div class="stat-div"></div>
-      <div class="stat-item"><div class="stat-num">14yr</div><div class="stat-lbl">Experience</div></div>
-      <div class="stat-div"></div>
       <div class="stat-item"><div class="stat-num">4.7★</div><div class="stat-lbl">Average Rating</div></div>
     </div>
   </div>
@@ -1210,144 +1169,6 @@ document.addEventListener('keydown', function(e) { if (e.key === 'Escape') { win
 
 <!-- Hotel pax is now inline dropdown, no fullscreen panel needed -->
 
-<!-- DESTINATIONS -->
-<section class="destinations" id="destinations">
-  <div class="section-inner">
-    <div class="section-eyebrow reveal">Top Destinations</div>
-    <h2 class="section-title reveal">Where Will You Go Next?</h2>
-    <p class="section-sub reveal">Handpicked destinations loved by our travellers — from cultural cities to tropical escapes.</p>
-    <div class="dest-grid">
-      <div class="dest-card tall reveal">
-        <div class="dest-img" style="background:linear-gradient(160deg,#1a1a2e,#16213e,#0f3460)"><span style="font-size:100px">🗼</span></div>
-        <div class="dest-overlay"></div>
-        <div class="dest-info">
-          <div class="dest-badge">Most Popular</div>
-          <div class="dest-name">Paris, France</div>
-          <div class="dest-meta">✈ Direct flight · 2h 15m</div>
-          <div class="dest-price">From £189 return</div>
-        </div>
-      </div>
-      <div class="dest-card reveal reveal-delay-1">
-        <div class="dest-img" style="background:linear-gradient(160deg,#0d2137,#1a3f5c,#2c5f8a)"><span>🏛</span></div>
-        <div class="dest-overlay"></div>
-        <div class="dest-info">
-          <div class="dest-name">Dubai, UAE</div>
-          <div class="dest-meta">✈ 7h flight</div>
-          <div class="dest-price">From £349 return</div>
-        </div>
-      </div>
-      <div class="dest-card reveal reveal-delay-2">
-        <div class="dest-img" style="background:linear-gradient(160deg,#1a3a1a,#2d5a27,#3d7a35)"><span>🌴</span></div>
-        <div class="dest-overlay"></div>
-        <div class="dest-info">
-          <div class="dest-name">Bali, Indonesia</div>
-          <div class="dest-meta">✈ 16h flight</div>
-          <div class="dest-price">From £599 return</div>
-        </div>
-      </div>
-      <div class="dest-card reveal reveal-delay-1">
-        <div class="dest-img" style="background:linear-gradient(160deg,#2a1a0d,#5c3a1a,#8a5a2c)"><span>🕌</span></div>
-        <div class="dest-overlay"></div>
-        <div class="dest-info">
-          <div class="dest-name">Istanbul, Turkey</div>
-          <div class="dest-meta">✈ 4h flight</div>
-          <div class="dest-price">From £219 return</div>
-        </div>
-      </div>
-      <div class="dest-card reveal reveal-delay-2">
-        <div class="dest-img" style="background:linear-gradient(160deg,#1a0d2a,#3a1a5c,#5a2c8a)"><span>🗽</span></div>
-        <div class="dest-overlay"></div>
-        <div class="dest-info">
-          <div class="dest-name">New York, USA</div>
-          <div class="dest-meta">✈ 8h flight</div>
-          <div class="dest-price">From £449 return</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PACKAGES -->
-<section class="packages" id="packages">
-  <div class="section-inner">
-    <div class="section-eyebrow reveal">Travel Packages</div>
-    <h2 class="section-title reveal">All-Inclusive Deals</h2>
-    <p class="section-sub reveal">Everything taken care of — flights, hotels, transfers and experiences bundled into one great price.</p>
-    <div class="pkg-grid">
-      <div class="pkg-card reveal">
-        <div class="pkg-img" style="background:linear-gradient(160deg,#0d2137,#1a3f5c)"><span>🏖</span><div class="pkg-badge hot">Best Seller</div></div>
-        <div class="pkg-body">
-          <div class="pkg-location">📍 Maldives</div>
-          <div class="pkg-name">Maldives Luxury Escape</div>
-          <div class="pkg-features"><span class="pkg-feature">✈ Flights</span><span class="pkg-feature">🏨 5★ Hotel</span><span class="pkg-feature">🍽 All-inclusive</span><span class="pkg-feature">7 nights</span></div>
-          <div class="pkg-footer"><div class="pkg-price"><div class="pkg-price-from">From</div><div class="pkg-price-amount">£1,899</div><div class="pkg-price-per">per person</div></div><button class="pkg-btn" onclick="showToast('Opening package details...')">Book Now</button></div>
-        </div>
-      </div>
-      <div class="pkg-card featured reveal reveal-delay-1">
-        <div class="pkg-img" style="background:linear-gradient(160deg,#1a3a1a,#2d6627)"><span>🗺</span><div class="pkg-badge">⭐ Featured</div></div>
-        <div class="pkg-body">
-          <div class="pkg-location">📍 Southeast Asia</div>
-          <div class="pkg-name">Asia Explorer Tour</div>
-          <div class="pkg-features"><span class="pkg-feature">✈ Flights</span><span class="pkg-feature">🏨 4★ Hotels</span><span class="pkg-feature">🚌 Transfers</span><span class="pkg-feature">14 nights</span></div>
-          <div class="pkg-footer"><div class="pkg-price"><div class="pkg-price-from">From</div><div class="pkg-price-amount">£2,299</div><div class="pkg-price-per">per person</div></div><button class="pkg-btn" onclick="showToast('Opening package details...')">Book Now</button></div>
-        </div>
-      </div>
-      <div class="pkg-card reveal reveal-delay-2">
-        <div class="pkg-img" style="background:linear-gradient(160deg,#2a1a0d,#5c3a1a)"><span>🏰</span><div class="pkg-badge hot">New</div></div>
-        <div class="pkg-body">
-          <div class="pkg-location">📍 Europe</div>
-          <div class="pkg-name">European City Break</div>
-          <div class="pkg-features"><span class="pkg-feature">✈ Flights</span><span class="pkg-feature">🏨 3★ Hotel</span><span class="pkg-feature">🎟 Activities</span><span class="pkg-feature">4 nights</span></div>
-          <div class="pkg-footer"><div class="pkg-price"><div class="pkg-price-from">From</div><div class="pkg-price-amount">£649</div><div class="pkg-price-per">per person</div></div><button class="pkg-btn" onclick="showToast('Opening package details...')">Book Now</button></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- AFFILIATES -->
-<section class="affiliates">
-  <div class="section-inner">
-    <div class="section-eyebrow reveal">Affiliate Partners</div>
-    <h2 class="section-title reveal">Book with Our Trusted Partners</h2>
-    <p class="section-sub reveal">We work with the world's leading travel platforms so you always get the best prices guaranteed.</p>
-    <div class="aff-grid">
-      <div class="aff-card reveal"><div class="aff-icon blue">✈</div><div class="aff-name">Flight Search</div><div class="aff-desc">Compare hundreds of airlines and find the cheapest flights to any destination worldwide.</div><div class="aff-partners"><span class="aff-partner">Skyscanner</span><span class="aff-partner">Kayak</span><span class="aff-partner">Google Flights</span></div><div class="aff-commission"><div><div class="aff-commission-label">Commission</div><div class="aff-commission-val">Up to 4%</div></div><div style="font-size:11px;color:rgba(255,255,255,.3)">Per booking</div></div><button class="aff-link-btn" onclick="window.open('https://www.skyscanner.net/flights?ref=yasska','_blank')">Search Flights →</button></div>
-      <div class="aff-card reveal reveal-delay-1"><div class="aff-icon gold">🏨</div><div class="aff-name">Hotel Booking</div><div class="aff-desc">Browse millions of hotels, guesthouses and resorts with instant confirmation and free cancellation.</div><div class="aff-partners"><span class="aff-partner">Booking.com</span><span class="aff-partner">Hotels.com</span><span class="aff-partner">Agoda</span></div><div class="aff-commission"><div><div class="aff-commission-label">Commission</div><div class="aff-commission-val">Up to 6%</div></div><div style="font-size:11px;color:rgba(255,255,255,.3)">Per booking</div></div><button class="aff-link-btn" onclick="window.open('https://www.skyscanner.net/hotels?ref=yasska','_blank')">Search Hotels →</button></div>
-      <div class="aff-card reveal reveal-delay-2"><div class="aff-icon green">🎒</div><div class="aff-name">Tours &amp; Activities</div><div class="aff-desc">Discover guided tours, day trips and unique experiences led by local experts at every destination.</div><div class="aff-partners"><span class="aff-partner">GetYourGuide</span><span class="aff-partner">Viator</span><span class="aff-partner">Klook</span></div><div class="aff-commission"><div><div class="aff-commission-label">Commission</div><div class="aff-commission-val">Up to 8%</div></div><div style="font-size:11px;color:rgba(255,255,255,.3)">Per booking</div></div><button class="aff-link-btn" onclick="showToast('Redirecting to tours...')">Explore Tours →</button></div>
-    </div>
-  </div>
-</section>
-
-<!-- WHY US -->
-<section class="why-us" id="about">
-  <div class="section-inner">
-    <div class="section-eyebrow reveal">Why Yasska</div>
-    <h2 class="section-title reveal">Travel Smarter with Us</h2>
-    <p class="section-sub reveal">We combine technology and personal service to make every trip seamless.</p>
-    <div class="why-grid">
-      <div class="why-card reveal"><div class="why-icon">💰</div><div class="why-title">Best Price Guarantee</div><div class="why-desc">Find it cheaper elsewhere and we'll match it — no questions asked.</div></div>
-      <div class="why-card reveal reveal-delay-1"><div class="why-icon">🛡</div><div class="why-title">ATOL Protected</div><div class="why-desc">All package holidays are fully protected by the Civil Aviation Authority.</div></div>
-      <div class="why-card reveal reveal-delay-2"><div class="why-icon">📞</div><div class="why-title">24/7 Support</div><div class="why-desc">Our travel experts are available around the clock for any assistance you need.</div></div>
-      <div class="why-card reveal reveal-delay-3"><div class="why-icon">⚡</div><div class="why-title">Instant Booking</div><div class="why-desc">Confirm flights and hotels in seconds with our real-time booking system.</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section class="testimonials">
-  <div class="section-inner">
-    <div class="section-eyebrow reveal">Reviews</div>
-    <h2 class="section-title reveal">What Our Travellers Say</h2>
-    <p class="section-sub reveal">Real experiences from people who trusted us with their most important trips.</p>
-    <div class="testi-grid">
-      <div class="testi-card reveal"><div class="testi-stars">★★★★★</div><div class="testi-text">"Absolutely seamless experience from start to finish. Booked a Maldives honeymoon package and every detail was perfect. Will never book travel any other way."</div><div class="testi-author"><div class="testi-avatar">S</div><div><div class="testi-name">Sarah &amp; James T.</div><div class="testi-trip">Maldives Honeymoon</div></div></div></div>
-      <div class="testi-card reveal reveal-delay-1"><div class="testi-stars">★★★★★</div><div class="testi-text">"Got an amazing deal on flights to Dubai that was £200 cheaper than anywhere else. The 24/7 support team also helped when my first flight was delayed."</div><div class="testi-author"><div class="testi-avatar">M</div><div><div class="testi-name">Mohammed A.</div><div class="testi-trip">Dubai City Break</div></div></div></div>
-      <div class="testi-card reveal reveal-delay-2"><div class="testi-stars">★★★★★</div><div class="testi-text">"The Asia Explorer tour was the trip of a lifetime. 14 nights across Thailand, Vietnam and Bali — every hotel and transfer was perfectly organised."</div><div class="testi-author"><div class="testi-avatar">L</div><div><div class="testi-name">Lisa Chen</div><div class="testi-trip">Asia Explorer Tour</div></div></div></div>
-    </div>
-  </div>
-</section>
-
 <!-- CONTACT -->
 <section class="contact-section" id="contact">
   <div class="section-inner">
@@ -1409,11 +1230,11 @@ document.addEventListener('keydown', function(e) { if (e.key === 'Escape') { win
         <div class="footer-social"><div class="social-btn">f</div><div class="social-btn">in</div><div class="social-btn">tw</div><div class="social-btn">ig</div></div>
       </div>
       <div class="footer-col"><h4>Destinations</h4><ul><li><a href="#">Europe</a></li><li><a href="#">Middle East</a></li><li><a href="#">Asia Pacific</a></li><li><a href="#">Americas</a></li><li><a href="#">Africa</a></li></ul></div>
-      <div class="footer-col"><h4>Services</h4><ul><li><a href="#">Flight Tickets</a></li><li><a href="#">Hotel Booking</a></li><li><a href="#">Holiday Packages</a></li><li><a href="#">Airport Transfers</a></li><li><a href="#">Travel Insurance</a></li></ul></div>
-      <div class="footer-col"><h4>Company</h4><ul><li><a href="#">About Us</a></li><li><a href="#">Contact</a></li><li><a href="#">Affiliate Programme</a></li><li><a href="#">Blog</a></li><li><a href="#">Careers</a></li></ul></div>
+      <div class="footer-col"><h4>Services</h4><ul><li><a href="#">Flight Tickets</a></li><li><a href="#">Hotel Booking</a></li><li><a href="#">Airport Transfers</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="#">About Us</a></li><li><a href="#">Contact</a></li></ul></div>
     </div>
     <div class="footer-bottom">
-      <div>© 2025 Yasska Ltd. All rights reserved. ATOL Protected 12345.</div>
+      <div>© 2025 Yasska Ltd. All rights reserved.</div>
       <div class="footer-bottom-links"><a href="privacy-policy.html">Privacy Policy</a><a href="terms-and-conditions.html">Terms &amp; Conditions</a><a href="cookie-policy.html">Cookie Policy</a></div>
     </div>
   </div>
@@ -2929,27 +2750,6 @@ function mOpenExp(){window.open(mBuildFlightUrls().exp,'_blank');}
   var bcm=document.getElementById('btn-children-minus');
   if(bam)bam.disabled=true;
   if(bcm)bcm.disabled=true;
-})();
-
-/* ══ HOT DEALS TICKER ══ */
-(function(){
-  var deals=window.HOT_DEALS||[];
-  function makeItems(list){
-    return list.map(function(d){
-      return '<span style="display:inline-flex;align-items:center;gap:8px;padding:0 18px;height:34px;border-right:1px solid rgba(255,92,92,.15);cursor:pointer;">'
-        +'<span style="font-size:13px">'+d.flag+'</span>'
-        +'<span style="font-size:11px;color:rgba(255,255,255,.55)">'+d.from+'</span>'
-        +'<span style="font-size:10px;color:rgba(255,255,255,.3)">→</span>'
-        +'<span style="font-size:12px;font-weight:700;color:#fff">'+d.to+'</span>'
-        +'<span style="font-size:10px;color:rgba(255,255,255,.4)">'+d.airline+'</span>'
-        +'<span style="font-size:12px;font-weight:800;color:#FFD166">'+d.price+'</span>'
-        +'<span style="font-size:10px;color:rgba(255,255,255,.25)">rtn</span>'
-        +'</span>';
-    }).join('');
-  }
-  var items=makeItems(deals);
-  var el=document.getElementById('hticker-inner');if(el)el.innerHTML=items+items;
-  var mob=document.getElementById('mobile-ticker-inner');if(mob)mob.innerHTML=items+items;
 })();
 
 /* ══ SCROLL REVEAL ══ */
