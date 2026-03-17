@@ -903,12 +903,14 @@ document.addEventListener('keydown', function(e) { if (e.key === 'Escape') { win
   <div class="hero-orb orb3"></div>
   <div class="hero-inner">
 
-    <div style="font-family:'Playfair Display',serif;font-size:clamp(14px,1.8vw,20px);font-weight:400;color:rgba(255,255,255,.5);letter-spacing:.25em;text-transform:uppercase;margin-bottom:6px;">Yasska.</div>
-    <h1>Welcome To<br/><em>Yasska</em> Travel Agency</h1>
-    <p class="hero-sub">Flights, hotels and curated travel packages to over 150 destinations. We handle every detail so you can focus on the journey.</p>
+    <!-- Title block -->
+    <div style="text-align:center;padding:48px 20px 40px;max-width:700px;margin:0 auto;">
+      <h1 style="font-family:'Playfair Display',serif;font-size:clamp(32px,5vw,58px);font-weight:900;color:#fff;line-height:1.1;margin-bottom:18px;">Welcome To <em style="font-style:normal;color:var(--gold2);">Yasska</em><br/>Travel Agency</h1>
+      <p style="font-size:clamp(14px,1.6vw,18px);color:rgba(255,255,255,.6);line-height:1.75;max-width:540px;margin:0 auto;">Flights, hotels and curated travel packages to over 150 destinations. We handle every detail so you can focus on the journey.</p>
+    </div>
 
-    <!-- ══ TRAVELPAYOUTS WIDGET ══ -->
-    <div id="book" class="search-box" style="padding:24px 28px;">
+    <!-- Search panel — separate block below title -->
+    <div id="book" class="search-box" style="padding:28px 32px;max-width:960px;margin:0 auto 40px;">
       <div id="tpwl-search"></div>
       <div id="tpwl-tickets"></div>
     </div>
