@@ -2606,6 +2606,8 @@ function mOpenPanel(id){
   document.body.style.overflow='hidden';
   var p=document.getElementById('mp-'+id);
   if(!p)return;
+  // Push state so browser back button closes the panel
+  history.pushState({panel:id},'','');
   p.classList.add('open');
   if(id==='from'){mRenderAirports('from','');setTimeout(function(){var i=document.getElementById('m-input-from');if(i){i.value='';i.focus();}},280);}
   else if(id==='to'){mRenderAirports('to','');setTimeout(function(){var i=document.getElementById('m-input-to');if(i){i.value='';i.focus();}},280);}
@@ -2644,6 +2646,16 @@ function mClosePanel(id){
   if(p)p.classList.remove('open');
   document.body.style.overflow='';
 }
+
+// Handle browser back button — close open panel instead of leaving site
+window.addEventListener('popstate',function(e){
+  // Find any open panel and close it
+  var openPanels=document.querySelectorAll('.m-panel.open');
+  if(openPanels.length>0){
+    openPanels.forEach(function(p){p.classList.remove('open');});
+    document.body.style.overflow='';
+  }
+});
 
 function mSetTab(el,tab){
   document.querySelectorAll('.msb-tab').forEach(function(b){b.classList.remove('active');});
