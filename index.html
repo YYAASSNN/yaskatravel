@@ -487,11 +487,11 @@ footer { background:var(--navy); color:rgba(255,255,255,.6); padding:70px 5% 30p
 .footer-bottom { display:flex; align-items:center; justify-content:space-between; padding-top:28px; border-top:1px solid rgba(255,255,255,.08); font-size:12px; }
 .footer-bottom-links { display:flex; gap:20px; }
 .footer-bottom-links a:hover { color:var(--gold2); }
-.wa-wrap { position:fixed; bottom:24px; right:14px; z-index:999; }
-.wa-btn { width:38px; height:38px; border-radius:50%; background:linear-gradient(135deg,#25d366,#128c7e); display:flex; align-items:center; justify-content:center; box-shadow:0 3px 10px rgba(37,211,102,.35); cursor:pointer; transition:all .3s; }
-.wa-btn:hover { transform:scale(1.1); box-shadow:0 4px 14px rgba(37,211,102,.5); }
+.wa-wrap { position:fixed; bottom:28px; right:28px; z-index:999; }
+.wa-btn { width:58px; height:58px; border-radius:50%; background:linear-gradient(135deg,#25d366,#128c7e); display:flex; align-items:center; justify-content:center; box-shadow:0 6px 24px rgba(37,211,102,.4); cursor:pointer; transition:all .3s; animation:waFloat 3s ease-in-out infinite; }
+.wa-btn:hover { transform:scale(1.12); box-shadow:0 8px 32px rgba(37,211,102,.55); }
 @keyframes waFloat { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-5px)} }
-.wa-btn svg { width:20px; height:20px; fill:#fff; }
+.wa-btn svg { width:30px; height:30px; fill:#fff; }
 .wa-tooltip { position:absolute; bottom:10px; right:68px; background:var(--navy); color:#fff; font-size:13px; font-weight:600; padding:8px 16px; border-radius:8px; white-space:nowrap; box-shadow:var(--shadow2); opacity:0; transform:translateX(8px); transition:all .3s; pointer-events:none; }
 .wa-wrap:hover .wa-tooltip { opacity:1; transform:translateX(0); }
 .reveal { opacity:0; transform:translateY(30px); transition:opacity .6s ease, transform .6s ease; }
@@ -838,7 +838,7 @@ footer { background:var(--navy); color:rgba(255,255,255,.6); padding:70px 5% 30p
   .contact-grid { grid-template-columns:1fr; gap:32px; }
   .cf-row { grid-template-columns:1fr; }
   .contact-form-card { padding:20px; }
-  .wa-wrap { bottom:90px; right:12px; }
+  .wa-wrap { bottom:60px; right:12px; }
 }
 </style>
 <script>
@@ -999,7 +999,7 @@ document.addEventListener('keydown', function(e) { if (e.key === 'Escape') { win
 </section>
 
 <!-- DESTINATIONS - HIDDEN, uncomment style to show -->
-<section class="destinations" id="destinations">
+<section class="destinations" id="destinations" style="display:none;">
   <div class="section-inner">
     <div class="section-eyebrow reveal">Popular Routes</div>
     <h2 class="section-title reveal">Cheap Flights Worldwide</h2>
@@ -1245,7 +1245,7 @@ document.addEventListener('keydown', function(e) { if (e.key === 'Escape') { win
 </footer>
 
 <!-- WhatsApp -->
-<div class="wa-wrap">
+<div class="wa-wrap" id="wa-wrap" style="opacity:0;pointer-events:none;transition:opacity .3s;">
   <a href="https://wa.me/447878940558?text=Hi! I'd like to enquire about travel packages." target="_blank" class="wa-btn">
     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
   </a>
@@ -2176,6 +2176,9 @@ window.pickDestination=function(dest, e){
   var nav=document.getElementById('navbar');
   var navH=nav?nav.offsetHeight:72;
   window.scrollTo({top:box.getBoundingClientRect().top+window.scrollY-navH-16,behavior:'smooth'});
+  if(window.innerWidth<=768){
+    setTimeout(function(){ mOpenPanel('to'); }, 400);
+  }
 };
 
 /* Desktop passengers */
@@ -2600,7 +2603,6 @@ function mOpenPanel(id){
   document.body.style.overflow='hidden';
   var p=document.getElementById('mp-'+id);
   if(!p)return;
-  history.pushState({panel:id},'','');
   p.classList.add('open');
   if(id==='from'){mRenderAirports('from','');setTimeout(function(){var i=document.getElementById('m-input-from');if(i){i.value='';i.focus();}},280);}
   else if(id==='to'){mRenderAirports('to','');setTimeout(function(){var i=document.getElementById('m-input-to');if(i){i.value='';i.focus();}},280);}
@@ -2974,6 +2976,36 @@ var revealObserver=new IntersectionObserver(function(entries){
   entries.forEach(function(e){if(e.isIntersecting)e.target.classList.add('visible');});
 },{threshold:0.12});
 document.querySelectorAll('.reveal').forEach(function(el){revealObserver.observe(el);});
+
+/* ══ WHATSAPP VISIBILITY — show near contact section only ══ */
+(function(){
+  var waWrap = document.getElementById('wa-wrap');
+  if(!waWrap) return;
+  var contactSection = document.getElementById('contact');
+  var footerSection = document.querySelector('footer');
+  if(!contactSection) return;
+
+  function checkWAVisibility(){
+    var scrollY = window.scrollY || window.pageYOffset;
+    var winH = window.innerHeight;
+    var contactTop = contactSection.getBoundingClientRect().top + scrollY;
+    var footerBottom = footerSection ? footerSection.getBoundingClientRect().bottom + scrollY : document.body.scrollHeight;
+    // Show when user is within 400px above contact section to end of footer
+    var showFrom = contactTop - 400;
+    var showTo = footerBottom + 200;
+    var currentBottom = scrollY + winH;
+    if(currentBottom >= showFrom && scrollY <= showTo){
+      waWrap.style.opacity='1';
+      waWrap.style.pointerEvents='auto';
+    } else {
+      waWrap.style.opacity='0';
+      waWrap.style.pointerEvents='none';
+    }
+  }
+
+  window.addEventListener('scroll', checkWAVisibility, {passive:true});
+  checkWAVisibility();
+})();
 
 /* ══ GLOBAL CLICK HANDLER ══ */
 document.addEventListener('click',function(e){
