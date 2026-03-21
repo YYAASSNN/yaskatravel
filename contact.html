@@ -152,8 +152,9 @@ footer{background:var(--navy);padding:20px 5%;margin-top:auto;}
       <h2 class="form-card-title">Send a Message</h2>
       <p class="form-card-sub">Use the form below to send an enquiry or question.</p>
 
-      <form name="contact" method="POST" data-netlify="true" id="contact-form" onsubmit="handleSubmit(event)">
+      <form name="contact" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field" id="contact-form" onsubmit="handleSubmit(event)">
         <input type="hidden" name="form-name" value="contact">
+        <input type="hidden" name="bot-field">
         <div class="cf-row">
           <div class="cf-group">
             <label class="cf-label">First Name</label>
