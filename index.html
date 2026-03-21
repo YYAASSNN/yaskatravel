@@ -18,8 +18,8 @@
 <meta name="impact-site-verification" content="8e51a026-9b0c-4849-8214-bc05096892e4"/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://yaskatravel.uk/"/>
-<meta property="og:title" content="YaskaTravel — Cheap Flights, Hotels &amp; Travel Deals"/>
-<meta property="og:description" content="Search and compare cheap flights and hotels to over 150 destinations worldwide. Compare all major airlines — free, no sign-up needed."/>
+<meta property="og:title" content="YaskaTravel — Cheap Flights &amp; Travel Deals"/>
+<meta property="og:description" content="Search and compare cheap flights to over 150 destinations worldwide. Compare all major airlines — free, no sign-up needed."/>
 <meta property="og:image" content="https://yaskatravel.uk/og-image.jpg"/>
 <meta property="og:site_name" content="YaskaTravel"/>
 <meta property="og:locale" content="en"/>
@@ -27,8 +27,8 @@
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:url" content="https://yaskatravel.uk/"/>
-<meta name="twitter:title" content="YaskaTravel — Cheap Flights, Hotels &amp; Travel Deals"/>
-<meta name="twitter:description" content="Search and compare cheap flights and hotels to over 150 destinations worldwide. Compare all major airlines — free, no sign-up needed."/>
+<meta name="twitter:title" content="YaskaTravel — Cheap Flights &amp; Travel Deals"/>
+<meta name="twitter:description" content="Search and compare cheap flights to over 150 destinations worldwide. Compare all major airlines — free, no sign-up needed."/>
 <meta name="twitter:image" content="https://yaskatravel.uk/og-image.jpg"/>
 
 <!-- Schema.org structured data -->
@@ -39,7 +39,7 @@
   "@type": "WebSite",
   "name": "YaskaTravel",
   "url": "https://yaskatravel.uk",
-  "description": "Free international flight and hotel comparison platform. Compare all major airlines worldwide including Umrah flights to Jeddah and Madinah.",
+  "description": "Free international flight comparison platform. Compare all major airlines worldwide including Umrah flights to Jeddah and Madinah.",
   "potentialAction": {
     "@type": "SearchAction",
     "target": "https://yaskatravel.uk/?q={search_term_string}",
@@ -51,7 +51,7 @@
   "@type": "Organization",
   "name": "YaskaTravel",
   "url": "https://yaskatravel.uk",
-  "description": "Free international flight and hotel comparison platform serving travellers worldwide.",
+  "description": "Free international flight comparison platform serving travellers worldwide.",
   "telephone": "+447878940558",
   "email": "info@yaskatravel.uk",
   "areaServed": "Worldwide",
@@ -211,9 +211,6 @@ nav.light { background:rgba(13,27,42,.97); border-bottom-color:rgba(255,255,255,
 .extra-direct { color:rgba(100,180,255,.7); border-color:rgba(100,180,255,.25); background:rgba(100,180,255,.06); }
 .extra-direct:hover { color:#64B4FF; border-color:rgba(100,180,255,.5); background:rgba(100,180,255,.12); }
 .extra-direct.active { color:#fff; border-color:#64B4FF; background:linear-gradient(135deg,rgba(27,95,193,.7),rgba(100,180,255,.4)); box-shadow:0 0 16px rgba(100,180,255,.25); }
-.extra-hotel { color:rgba(255,160,80,.7); border-color:rgba(255,160,80,.25); background:rgba(255,160,80,.06); }
-.extra-hotel:hover { color:#FFA050; border-color:rgba(255,160,80,.5); background:rgba(255,160,80,.12); }
-.extra-hotel.active { color:#fff; border-color:#FFA050; background:linear-gradient(135deg,rgba(200,80,20,.6),rgba(255,160,80,.45)); box-shadow:0 0 16px rgba(255,140,60,.25); }
 .extra-check { width:16px; height:16px; border-radius:4px; border:1.5px solid rgba(255,255,255,.2); background:transparent; display:inline-flex; align-items:center; justify-content:center; transition:all .2s; flex-shrink:0; }
 .extra-toggle.active .extra-check::after { content:''; display:block; width:9px; height:5px; border-left:2px solid #fff; border-bottom:2px solid #fff; transform:rotate(-45deg) translateY(-1px); }
 .swap-btn {
@@ -626,64 +623,6 @@ footer { background:var(--navy); color:rgba(255,255,255,.6); padding:70px 5% 30p
 .msb-btn-gfl{background:linear-gradient(135deg,#4285F4,#1a5dc8);color:#fff;}
 .msb-btn-exp{background:linear-gradient(135deg,#FFC72C,#F0A800);color:#00355F;}
 
-/* ── HOTEL PAX DROPDOWN POPUP ── */
-.hpd-wrap{
-  background:#0e1f3d;
-  border:1px solid rgba(255,255,255,.18);
-  border-radius:18px;
-  box-shadow:0 20px 60px rgba(0,0,0,.6), 0 0 0 1px rgba(255,255,255,.06);
-  overflow:hidden;
-}
-.hpd-header{
-  font-size:13px;font-weight:800;color:rgba(255,255,255,.45);
-  letter-spacing:.08em;text-transform:uppercase;
-  padding:16px 20px 10px;
-  border-bottom:1px solid rgba(255,255,255,.08);
-}
-.hpd-row{
-  display:flex;align-items:center;justify-content:space-between;
-  padding:16px 20px;
-  border-bottom:1px solid rgba(255,255,255,.08);
-}
-.hpd-row:last-of-type{border-bottom:none;}
-.hpd-info .hpd-name{font-size:16px;font-weight:700;color:#fff;}
-.hpd-info .hpd-sub{font-size:12px;color:rgba(255,255,255,.4);margin-top:3px;line-height:1.4;}
-.hpd-counter{display:flex;align-items:center;gap:18px;flex-shrink:0;}
-.hpd-btn{
-  width:38px;height:38px;border-radius:50%;
-  border:1.5px solid rgba(255,255,255,.25);
-  background:rgba(255,255,255,.08);
-  font-size:22px;font-weight:300;color:#fff;
-  cursor:pointer;display:flex;align-items:center;justify-content:center;
-  transition:all .15s;line-height:1;flex-shrink:0;
-  font-family:'Outfit',sans-serif;
-  -webkit-tap-highlight-color:transparent;
-  touch-action:manipulation;
-}
-.hpd-btn:disabled{opacity:.3;cursor:not-allowed;}
-.hpd-btn:not(:disabled):hover{border-color:var(--blue);background:rgba(27,95,193,.3);color:#fff;}
-.hpd-btn:not(:disabled):active{background:var(--blue);border-color:var(--blue);transform:scale(.92);}
-.hpd-num{font-size:18px;font-weight:800;color:#fff;min-width:26px;text-align:center;}
-.hpd-warn{
-  display:flex;align-items:center;gap:8px;
-  margin:0 20px 4px;padding:10px 14px;
-  background:rgba(255,160,50,.1);border:1px solid rgba(255,160,50,.3);
-  border-radius:10px;font-size:12px;font-weight:600;color:#FFB347;line-height:1.4;
-}
-.hpd-done{
-  display:block;
-  width:calc(100% - 40px);margin:12px 20px 18px;
-  padding:15px;border-radius:12px;
-  background:linear-gradient(135deg,var(--blue),var(--blue2));
-  color:#fff;border:none;
-  font-family:'Outfit',sans-serif;font-size:15px;font-weight:800;
-  cursor:pointer;
-  box-shadow:0 4px 14px rgba(27,95,193,.4);
-  -webkit-tap-highlight-color:transparent;
-  touch-action:manipulation;
-}
-.hpd-done:active{transform:scale(.98);}
-
 .m-panel{
   position:fixed;inset:0;z-index:99999;
   background:var(--navy);
@@ -986,7 +925,7 @@ document.addEventListener('keydown', function(e) { if (e.key === 'Escape') { win
     <!-- Title block -->
     <div style="text-align:center;padding:48px 20px 40px;max-width:700px;margin:0 auto;">
       <h1 style="font-family:'Playfair Display',serif;font-size:clamp(32px,5vw,58px);font-weight:900;color:#fff;line-height:1.1;margin-bottom:18px;">Compare Cheap Flights <span style="color:var(--gold2)">&amp; Travel Deals<br/>Worldwide</span></h1>
-      <p style="font-size:clamp(14px,1.6vw,18px);color:rgba(255,255,255,.6);line-height:1.75;max-width:540px;margin:0 auto;">Flights, hotels and travel deals to over 150 destinations worldwide. Compare top airlines and booking platforms to find your best fare.</p>
+      <p style="font-size:clamp(14px,1.6vw,18px);color:rgba(255,255,255,.6);line-height:1.75;max-width:540px;margin:0 auto;">Flights and travel deals to over 150 destinations worldwide. Compare top airlines and booking platforms to find your best fare.</p>
     </div>
 
     <!-- Search panel — separate block below title -->
@@ -1206,11 +1145,11 @@ document.addEventListener('keydown', function(e) { if (e.key === 'Escape') { win
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="footer-logo"><div class="nav-logo-mark" style="width:32px;height:32px;font-size:16px">✈</div>YaskaTravel<span style="color:var(--gold2)">.</span></div>
-        <p>YaskaTravel is an independent travel comparison website helping travellers discover and compare flights, hotels, and travel deals from third-party booking platforms.</p>
+        <p>YaskaTravel is an independent travel comparison website helping travellers discover and compare flights and travel deals from third-party booking platforms.</p>
         <div class="footer-social"><div class="social-btn">f</div><div class="social-btn">in</div><div class="social-btn">tw</div><div class="social-btn">ig</div></div>
       </div>
       <div class="footer-col"><h4>Destinations</h4><ul><li><a href="#destinations">Europe</a></li><li><a href="#destinations">Middle East</a></li><li><a href="#destinations">Asia Pacific</a></li><li><a href="#destinations">Americas</a></li><li><a href="#destinations">Africa</a></li></ul></div>
-      <div class="footer-col"><h4>Services</h4><ul><li><a href="#book" onclick="scrollToBook(event)">Flight Search</a></li><li><a href="#book" onclick="scrollToBook(event)">Hotel Search</a></li><li><a href="#guides">Travel Guides</a></li></ul></div>
+      <div class="footer-col"><h4>Services</h4><ul><li><a href="#book" onclick="scrollToBook(event)">Flight Search</a></li><li><a href="#guides">Travel Guides</a></li></ul></div>
       <div class="footer-col"><h4>Website</h4><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li><li><a href="affiliate-disclosure.html">Affiliate Disclosure</a></li><li><a href="cookie-policy.html">Cookie Policy</a></li></ul></div>
     </div>
     <div class="footer-bottom">
@@ -1222,7 +1161,7 @@ document.addEventListener('keydown', function(e) { if (e.key === 'Escape') { win
 
 <!-- WhatsApp -->
 <div class="wa-wrap" id="wa-wrap" style="opacity:0;pointer-events:none;transition:opacity .3s;">
-  <a href="https://wa.me/447878940558?text=Hi! I'd like to enquire about travel packages." target="_blank" class="wa-btn">
+  <a href="https://wa.me/447878940558?text=Hi! I'd like to enquire about flights." target="_blank" class="wa-btn">
     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
   </a>
   <div class="wa-tooltip">💬 Chat with us</div>
@@ -1277,39 +1216,6 @@ document.addEventListener('keydown', function(e) { if (e.key === 'Escape') { win
   </div>
 </div>
 
-<!-- HOTEL PAX PORTAL (desktop) -->
-<div id="hotel-pax-portal" onclick="closeHotelPaxPortal()" style="display:none;position:fixed;z-index:99999;">
-  <div id="hotel-pax-portal-inner" onclick="event.stopPropagation()" style="width:300px;background:#0e1f3d;border:1px solid rgba(255,255,255,.15);border-radius:16px;box-shadow:0 8px 40px rgba(0,0,0,.5);padding:6px 16px 14px;animation:dropIn .18s cubic-bezier(.34,1.56,.64,1);">
-    <div class="pax-section">
-      <div class="pax-section-title" style="color:rgba(255,255,255,.45);margin-bottom:6px">Guests &amp; Rooms</div>
-    </div>
-    <div class="pax-row" style="border-color:rgba(255,255,255,.08)">
-      <div class="pax-row-info"><div class="pax-row-label" style="color:#fff">Adults</div><div class="pax-row-sub" style="color:rgba(255,255,255,.4)">18+ years</div></div>
-      <div class="pax-counter">
-        <button class="pax-btn" id="d-btn-ham" onclick="changeHotelCount('adults',-1)" style="border-color:rgba(255,255,255,.2);background:rgba(255,255,255,.06);color:#fff">−</button>
-        <span class="pax-count" id="d-count-hotel-adults" style="color:#fff">2</span>
-        <button class="pax-btn" id="d-btn-hap" onclick="changeHotelCount('adults',1)" style="border-color:rgba(255,255,255,.2);background:rgba(255,255,255,.06);color:#fff">+</button>
-      </div>
-    </div>
-    <div class="pax-row" style="border-color:rgba(255,255,255,.08)">
-      <div class="pax-row-info"><div class="pax-row-label" style="color:#fff">Children</div><div class="pax-row-sub" style="color:rgba(255,255,255,.4)">0–17 years</div></div>
-      <div class="pax-counter">
-        <button class="pax-btn" id="d-btn-hcm" onclick="changeHotelCount('children',-1)" style="border-color:rgba(255,255,255,.2);background:rgba(255,255,255,.06);color:#fff">−</button>
-        <span class="pax-count" id="d-count-hotel-children" style="color:#fff">0</span>
-        <button class="pax-btn" id="d-btn-hcp" onclick="changeHotelCount('children',1)" style="border-color:rgba(255,255,255,.2);background:rgba(255,255,255,.06);color:#fff">+</button>
-      </div>
-    </div>
-    <div class="pax-row" style="border-color:rgba(255,255,255,.08)">
-      <div class="pax-row-info"><div class="pax-row-label" style="color:#fff">Rooms</div><div class="pax-row-sub" style="color:rgba(255,255,255,.4)">1 adult per room min.</div></div>
-      <div class="pax-counter">
-        <button class="pax-btn" id="d-btn-hrm" onclick="changeHotelCount('rooms',-1)" style="border-color:rgba(255,255,255,.2);background:rgba(255,255,255,.06);color:#fff">−</button>
-        <span class="pax-count" id="d-count-hotel-rooms" style="color:#fff">1</span>
-        <button class="pax-btn" id="d-btn-hrp" onclick="changeHotelCount('rooms',1)" style="border-color:rgba(255,255,255,.2);background:rgba(255,255,255,.06);color:#fff">+</button>
-      </div>
-    </div>
-    <button class="pax-done-btn" onclick="closeHotelPaxPortal()" style="background:linear-gradient(135deg,var(--blue),var(--blue2))">Apply</button>
-  </div>
-</div>
 
 <!-- Toast -->
 <div id="toast" style="position:fixed;bottom:100px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--navy);color:#fff;padding:12px 24px;border-radius:10px;font-size:14px;font-weight:600;z-index:9999;opacity:0;transition:all .3s;pointer-events:none;box-shadow:0 8px 32px rgba(0,0,0,.3);white-space:nowrap"></div>
@@ -1317,7 +1223,7 @@ document.addEventListener('keydown', function(e) { if (e.key === 'Escape') { win
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 
 /* ══════════════════════════════════════════
-   SHARED AIRPORT + HOTEL DATA
+   SHARED AIRPORT DATA
 ══════════════════════════════════════════ */
 const AIRPORTS=[
   {code:'LHR',name:'London Heathrow Airport',city:'London',country:'United Kingdom',flag:'🇬🇧',type:'main'},
@@ -1372,546 +1278,9 @@ const AIRPORTS=[
   {code:'HGA',name:'Hargeisa Egal International Airport',city:'Hargeisa',country:'Somalia',flag:'🇸🇴',type:'main'},
 ];
 
-
-const HOTEL_PLACES=[
-  /* ── UNITED KINGDOM ── */
-  {name:'London',sub:'England, UK',country:'United Kingdom',flag:'🇬🇧',entity:'27544008'},
-  {name:'Manchester',sub:'England, UK',country:'United Kingdom',flag:'🇬🇧',entity:'27545022'},
-  {name:'Edinburgh',sub:'Scotland, UK',country:'United Kingdom',flag:'🇬🇧',entity:'27544850'},
-  {name:'Birmingham',sub:'England, UK',country:'United Kingdom',flag:'🇬🇧',entity:'27544658'},
-  {name:'Glasgow',sub:'Scotland, UK',country:'United Kingdom',flag:'🇬🇧',entity:'27544899'},
-  {name:'Bristol',sub:'England, UK',country:'United Kingdom',flag:'🇬🇧',entity:'27544712'},
-  {name:'Liverpool',sub:'England, UK',country:'United Kingdom',flag:'🇬🇧',entity:'27545012'},
-  {name:'Leeds',sub:'England, UK',country:'United Kingdom',flag:'🇬🇧',entity:'27544998'},
-  {name:'Oxford',sub:'England, UK',country:'United Kingdom',flag:'🇬🇧',entity:'27545060'},
-  {name:'Cambridge',sub:'England, UK',country:'United Kingdom',flag:'🇬🇧',entity:'27544731'},
-  {name:'Bath',sub:'England, UK',country:'United Kingdom',flag:'🇬🇧',entity:'27544631'},
-  {name:'York',sub:'England, UK',country:'United Kingdom',flag:'🇬🇧',entity:'27545214'},
-  {name:'Brighton',sub:'England, UK',country:'United Kingdom',flag:'🇬🇧',entity:'27544708'},
-  {name:'Cardiff',sub:'Wales, UK',country:'United Kingdom',flag:'🇬🇧',entity:'27544738'},
-  {name:'Belfast',sub:'N. Ireland, UK',country:'United Kingdom',flag:'🇬🇧',entity:'27544637'},
-  {name:'Newcastle',sub:'England, UK',country:'United Kingdom',flag:'🇬🇧',entity:'27545035'},
-  {name:'Nottingham',sub:'England, UK',country:'United Kingdom',flag:'🇬🇧',entity:'27545053'},
-  {name:'Sheffield',sub:'England, UK',country:'United Kingdom',flag:'🇬🇧',entity:'27545106'},
-  {name:'Inverness',sub:'Scotland, UK',country:'United Kingdom',flag:'🇬🇧',entity:'27544960'},
-  {name:'Dundee',sub:'Scotland, UK',country:'United Kingdom',flag:'🇬🇧',entity:'27544840'},
-  {name:'Aberdeen',sub:'Scotland, UK',country:'United Kingdom',flag:'🇬🇧',entity:'27544610'},
-  {name:'Stonehenge',sub:'Wiltshire, UK',country:'United Kingdom',flag:'🇬🇧',entity:'27545140'},
-  /* ── SAUDI ARABIA ── */
-  {name:'Makkah',sub:'Mecca Region, Saudi Arabia',country:'Saudi Arabia',flag:'🇸🇦',entity:'27537500'},
-  {name:'Madinah',sub:'Medina Region, Saudi Arabia',country:'Saudi Arabia',flag:'🇸🇦',entity:'27537490'},
-  {name:'Riyadh',sub:'Riyadh Region, Saudi Arabia',country:'Saudi Arabia',flag:'🇸🇦',entity:'27537516'},
-  {name:'Jeddah',sub:'Mecca Region, Saudi Arabia',country:'Saudi Arabia',flag:'🇸🇦',entity:'27537478'},
-  {name:'Dammam',sub:'Eastern Province, Saudi Arabia',country:'Saudi Arabia',flag:'🇸🇦',entity:'27537430'},
-  {name:'Abha',sub:'Asir Region, Saudi Arabia',country:'Saudi Arabia',flag:'🇸🇦',entity:'27537390'},
-  {name:'Taif',sub:'Mecca Region, Saudi Arabia',country:'Saudi Arabia',flag:'🇸🇦',entity:'27537538'},
-  {name:'AlUla',sub:'Al Madinah Region, Saudi Arabia',country:'Saudi Arabia',flag:'🇸🇦',entity:'27537400'},
-  {name:'NEOM',sub:'Tabuk Region, Saudi Arabia',country:'Saudi Arabia',flag:'🇸🇦',entity:'27537504'},
-  {name:'Khobar',sub:'Eastern Province, Saudi Arabia',country:'Saudi Arabia',flag:'🇸🇦',entity:'27537488'},
-  {name:'Yanbu',sub:'Madinah Region, Saudi Arabia',country:'Saudi Arabia',flag:'🇸🇦',entity:'27537562'},
-  {name:'Tabuk',sub:'Tabuk Region, Saudi Arabia',country:'Saudi Arabia',flag:'🇸🇦',entity:'27537536'},
-  {name:'Hail',sub:'Ha\'il Region, Saudi Arabia',country:'Saudi Arabia',flag:'🇸🇦',entity:'27537460'},
-  {name:'Najran',sub:'Najran Region, Saudi Arabia',country:'Saudi Arabia',flag:'🇸🇦',entity:'27537502'},
-  /* ── UAE ── */
-  {name:'Dubai',sub:'UAE',country:'UAE',flag:'🇦🇪',entity:'27537233'},
-  {name:'Abu Dhabi',sub:'UAE',country:'UAE',flag:'🇦🇪',entity:'27537078'},
-  {name:'Sharjah',sub:'UAE',country:'UAE',flag:'🇦🇪',entity:'27537310'},
-  {name:'Ras Al Khaimah',sub:'UAE',country:'UAE',flag:'🇦🇪',entity:'27537295'},
-  {name:'Fujairah',sub:'UAE',country:'UAE',flag:'🇦🇪',entity:'27537240'},
-  {name:'Ajman',sub:'UAE',country:'UAE',flag:'🇦🇪',entity:'27537090'},
-  /* ── QATAR ── */
-  {name:'Doha',sub:'Qatar',country:'Qatar',flag:'🇶🇦',entity:'27537467'},
-  {name:'Lusail',sub:'Qatar',country:'Qatar',flag:'🇶🇦',entity:'27537497'},
-  /* ── BAHRAIN ── */
-  {name:'Manama',sub:'Bahrain',country:'Bahrain',flag:'🇧🇭',entity:'27537383'},
-  {name:'Muharraq',sub:'Bahrain',country:'Bahrain',flag:'🇧🇭',entity:'27537503'},
-  /* ── KUWAIT ── */
-  {name:'Kuwait City',sub:'Kuwait',country:'Kuwait',flag:'🇰🇼',entity:'27537496'},
-  /* ── OMAN ── */
-  {name:'Muscat',sub:'Oman',country:'Oman',flag:'🇴🇲',entity:'27537505'},
-  {name:'Salalah',sub:'Dhofar, Oman',country:'Oman',flag:'🇴🇲',entity:'27537507'},
-  {name:'Nizwa',sub:'Ad Dakhiliyah, Oman',country:'Oman',flag:'🇴🇲',entity:'27537506'},
-  /* ── JORDAN ── */
-  {name:'Amman',sub:'Jordan',country:'Jordan',flag:'🇯🇴',entity:'27537368'},
-  {name:'Petra',sub:'Ma\'an Governorate, Jordan',country:'Jordan',flag:'🇯🇴',entity:'27537507'},
-  {name:'Aqaba',sub:'Aqaba, Jordan',country:'Jordan',flag:'🇯🇴',entity:'27537370'},
-  {name:'Wadi Rum',sub:'Jordan',country:'Jordan',flag:'🇯🇴',entity:'27537559'},
-  {name:'Dead Sea',sub:'Jordan',country:'Jordan',flag:'🇯🇴',entity:'27537427'},
-  /* ── LEBANON ── */
-  {name:'Beirut',sub:'Lebanon',country:'Lebanon',flag:'🇱🇧',entity:'27537396'},
-  /* ── ISRAEL ── */
-  {name:'Tel Aviv',sub:'Israel',country:'Israel',flag:'🇮🇱',entity:'27537540'},
-  {name:'Jerusalem',sub:'Israel',country:'Israel',flag:'🇮🇱',entity:'27537487'},
-  {name:'Eilat',sub:'Israel',country:'Israel',flag:'🇮🇱',entity:'27537437'},
-  /* ── IRAQ ── */
-  {name:'Baghdad',sub:'Iraq',country:'Iraq',flag:'🇮🇶',entity:'27537378'},
-  {name:'Erbil',sub:'Kurdistan Region, Iraq',country:'Iraq',flag:'🇮🇶',entity:'27537440'},
-  /* ── TURKEY ── */
-  {name:'Istanbul',sub:'Turkey',country:'Turkey',flag:'🇹🇷',entity:'27547416'},
-  {name:'Antalya',sub:'Turkish Riviera',country:'Turkey',flag:'🇹🇷',entity:'27547220'},
-  {name:'Bodrum',sub:'Muğla, Turkey',country:'Turkey',flag:'🇹🇷',entity:'27547257'},
-  {name:'Cappadocia',sub:'Nevşehir, Turkey',country:'Turkey',flag:'🇹🇷',entity:'27547275'},
-  {name:'Marmaris',sub:'Muğla, Turkey',country:'Turkey',flag:'🇹🇷',entity:'27547469'},
-  {name:'Fethiye',sub:'Muğla, Turkey',country:'Turkey',flag:'🇹🇷',entity:'27547360'},
-  {name:'Alanya',sub:'Antalya, Turkey',country:'Turkey',flag:'🇹🇷',entity:'27547204'},
-  {name:'Ankara',sub:'Turkey',country:'Turkey',flag:'🇹🇷',entity:'27547215'},
-  {name:'Izmir',sub:'Turkey',country:'Turkey',flag:'🇹🇷',entity:'27547423'},
-  {name:'Pamukkale',sub:'Denizli, Turkey',country:'Turkey',flag:'🇹🇷',entity:'27547492'},
-  {name:'Trabzon',sub:'Black Sea, Turkey',country:'Turkey',flag:'🇹🇷',entity:'27547570'},
-  /* ── EGYPT ── */
-  {name:'Cairo',sub:'Egypt',country:'Egypt',flag:'🇪🇬',entity:'27537996'},
-  {name:'Hurghada',sub:'Red Sea, Egypt',country:'Egypt',flag:'🇪🇬',entity:'27538059'},
-  {name:'Sharm el-Sheikh',sub:'South Sinai, Egypt',country:'Egypt',flag:'🇪🇬',entity:'27538117'},
-  {name:'Luxor',sub:'Egypt',country:'Egypt',flag:'🇪🇬',entity:'27538075'},
-  {name:'Aswan',sub:'Egypt',country:'Egypt',flag:'🇪🇬',entity:'27537979'},
-  {name:'Alexandria',sub:'Egypt',country:'Egypt',flag:'🇪🇬',entity:'27537960'},
-  {name:'Dahab',sub:'South Sinai, Egypt',country:'Egypt',flag:'🇪🇬',entity:'27538013'},
-  {name:'El Gouna',sub:'Red Sea, Egypt',country:'Egypt',flag:'🇪🇬',entity:'27538032'},
-  /* ── MOROCCO ── */
-  {name:'Marrakech',sub:'Morocco',country:'Morocco',flag:'🇲🇦',entity:'27546064'},
-  {name:'Casablanca',sub:'Morocco',country:'Morocco',flag:'🇲🇦',entity:'27546021'},
-  {name:'Fez',sub:'Morocco',country:'Morocco',flag:'🇲🇦',entity:'27546032'},
-  {name:'Agadir',sub:'Morocco',country:'Morocco',flag:'🇲🇦',entity:'27546007'},
-  {name:'Tangier',sub:'Morocco',country:'Morocco',flag:'🇲🇦',entity:'27546091'},
-  {name:'Essaouira',sub:'Morocco',country:'Morocco',flag:'🇲🇦',entity:'27546030'},
-  {name:'Chefchaouen',sub:'Rif Mountains, Morocco',country:'Morocco',flag:'🇲🇦',entity:'27546022'},
-  {name:'Rabat',sub:'Morocco',country:'Morocco',flag:'🇲🇦',entity:'27546082'},
-  {name:'Ouarzazate',sub:'Morocco',country:'Morocco',flag:'🇲🇦',entity:'27546078'},
-  /* ── TUNISIA ── */
-  {name:'Tunis',sub:'Tunisia',country:'Tunisia',flag:'🇹🇳',entity:'27546110'},
-  {name:'Sousse',sub:'Tunisia',country:'Tunisia',flag:'🇹🇳',entity:'27546107'},
-  {name:'Djerba',sub:'Tunisia',country:'Tunisia',flag:'🇹🇳',entity:'27546095'},
-  {name:'Hammamet',sub:'Tunisia',country:'Tunisia',flag:'🇹🇳',entity:'27546098'},
-  /* ── FRANCE ── */
-  {name:'Paris',sub:'Île-de-France, France',country:'France',flag:'🇫🇷',entity:'27539733'},
-  {name:'Nice',sub:'Côte d\'Azur, France',country:'France',flag:'🇫🇷',entity:'27539791'},
-  {name:'Lyon',sub:'Auvergne-Rhône-Alpes, France',country:'France',flag:'🇫🇷',entity:'27539763'},
-  {name:'Marseille',sub:'Provence, France',country:'France',flag:'🇫🇷',entity:'27539769'},
-  {name:'Bordeaux',sub:'Nouvelle-Aquitaine, France',country:'France',flag:'🇫🇷',entity:'27539711'},
-  {name:'Cannes',sub:'Côte d\'Azur, France',country:'France',flag:'🇫🇷',entity:'27539720'},
-  {name:'Strasbourg',sub:'Grand Est, France',country:'France',flag:'🇫🇷',entity:'27539826'},
-  {name:'Toulouse',sub:'Occitanie, France',country:'France',flag:'🇫🇷',entity:'27539832'},
-  {name:'Montpellier',sub:'Occitanie, France',country:'France',flag:'🇫🇷',entity:'27539784'},
-  {name:'Saint-Tropez',sub:'Côte d\'Azur, France',country:'France',flag:'🇫🇷',entity:'27539815'},
-  {name:'Chamonix',sub:'Alps, France',country:'France',flag:'🇫🇷',entity:'27539742'},
-  {name:'Normandy',sub:'Region, France',country:'France',flag:'🇫🇷',entity:'27539793'},
-  {name:'Provence',sub:'Region, France',country:'France',flag:'🇫🇷',entity:'27539808'},
-  {name:'French Riviera',sub:'Côte d\'Azur, France',country:'France',flag:'🇫🇷',entity:'27539751'},
-  /* ── SPAIN ── */
-  {name:'Barcelona',sub:'Catalonia, Spain',country:'Spain',flag:'🇪🇸',entity:'27547735'},
-  {name:'Madrid',sub:'Madrid, Spain',country:'Spain',flag:'🇪🇸',entity:'27547768'},
-  {name:'Seville',sub:'Andalusia, Spain',country:'Spain',flag:'🇪🇸',entity:'27547812'},
-  {name:'Valencia',sub:'Valencia, Spain',country:'Spain',flag:'🇪🇸',entity:'27547829'},
-  {name:'Malaga',sub:'Andalusia, Spain',country:'Spain',flag:'🇪🇸',entity:'27547771'},
-  {name:'Ibiza',sub:'Balearic Islands, Spain',country:'Spain',flag:'🇪🇸',entity:'27547753'},
-  {name:'Majorca',sub:'Balearic Islands, Spain',country:'Spain',flag:'🇪🇸',entity:'27547772'},
-  {name:'Tenerife',sub:'Canary Islands, Spain',country:'Spain',flag:'🇪🇸',entity:'27547820'},
-  {name:'Gran Canaria',sub:'Canary Islands, Spain',country:'Spain',flag:'🇪🇸',entity:'27547748'},
-  {name:'Lanzarote',sub:'Canary Islands, Spain',country:'Spain',flag:'🇪🇸',entity:'27547763'},
-  {name:'Fuerteventura',sub:'Canary Islands, Spain',country:'Spain',flag:'🇪🇸',entity:'27547745'},
-  {name:'Marbella',sub:'Costa del Sol, Spain',country:'Spain',flag:'🇪🇸',entity:'27547773'},
-  {name:'Benidorm',sub:'Costa Blanca, Spain',country:'Spain',flag:'🇪🇸',entity:'27547737'},
-  {name:'Granada',sub:'Andalusia, Spain',country:'Spain',flag:'🇪🇸',entity:'27547747'},
-  {name:'Bilbao',sub:'Basque Country, Spain',country:'Spain',flag:'🇪🇸',entity:'27547738'},
-  {name:'San Sebastián',sub:'Basque Country, Spain',country:'Spain',flag:'🇪🇸',entity:'27547807'},
-  {name:'Costa del Sol',sub:'Andalusia, Spain',country:'Spain',flag:'🇪🇸',entity:'27547741'},
-  {name:'Menorca',sub:'Balearic Islands, Spain',country:'Spain',flag:'🇪🇸',entity:'27547774'},
-  /* ── ITALY ── */
-  {name:'Rome',sub:'Lazio, Italy',country:'Italy',flag:'🇮🇹',entity:'27536781'},
-  {name:'Milan',sub:'Lombardy, Italy',country:'Italy',flag:'🇮🇹',entity:'27536744'},
-  {name:'Venice',sub:'Veneto, Italy',country:'Italy',flag:'🇮🇹',entity:'27536832'},
-  {name:'Florence',sub:'Tuscany, Italy',country:'Italy',flag:'🇮🇹',entity:'27536689'},
-  {name:'Naples',sub:'Campania, Italy',country:'Italy',flag:'🇮🇹',entity:'27536756'},
-  {name:'Amalfi Coast',sub:'Campania, Italy',country:'Italy',flag:'🇮🇹',entity:'27536621'},
-  {name:'Positano',sub:'Amalfi Coast, Italy',country:'Italy',flag:'🇮🇹',entity:'27536775'},
-  {name:'Sicily',sub:'Island, Italy',country:'Italy',flag:'🇮🇹',entity:'27536800'},
-  {name:'Sardinia',sub:'Island, Italy',country:'Italy',flag:'🇮🇹',entity:'27536791'},
-  {name:'Cinque Terre',sub:'Liguria, Italy',country:'Italy',flag:'🇮🇹',entity:'27536659'},
-  {name:'Tuscany',sub:'Region, Italy',country:'Italy',flag:'🇮🇹',entity:'27536822'},
-  {name:'Verona',sub:'Veneto, Italy',country:'Italy',flag:'🇮🇹',entity:'27536836'},
-  {name:'Bologna',sub:'Emilia-Romagna, Italy',country:'Italy',flag:'🇮🇹',entity:'27536634'},
-  {name:'Turin',sub:'Piedmont, Italy',country:'Italy',flag:'🇮🇹',entity:'27536821'},
-  {name:'Capri',sub:'Campania, Italy',country:'Italy',flag:'🇮🇹',entity:'27536646'},
-  {name:'Lake Como',sub:'Lombardy, Italy',country:'Italy',flag:'🇮🇹',entity:'27536727'},
-  {name:'Lake Garda',sub:'Northern Italy',country:'Italy',flag:'🇮🇹',entity:'27536729'},
-  {name:'Palermo',sub:'Sicily, Italy',country:'Italy',flag:'🇮🇹',entity:'27536767'},
-  /* ── GREECE ── */
-  {name:'Athens',sub:'Attica, Greece',country:'Greece',flag:'🇬🇷',entity:'27544551'},
-  {name:'Santorini',sub:'Cyclades, Greece',country:'Greece',flag:'🇬🇷',entity:'27544744'},
-  {name:'Mykonos',sub:'Cyclades, Greece',country:'Greece',flag:'🇬🇷',entity:'27544688'},
-  {name:'Crete',sub:'Island, Greece',country:'Greece',flag:'🇬🇷',entity:'27544579'},
-  {name:'Rhodes',sub:'Dodecanese, Greece',country:'Greece',flag:'🇬🇷',entity:'27544729'},
-  {name:'Corfu',sub:'Ionian Islands, Greece',country:'Greece',flag:'🇬🇷',entity:'27544576'},
-  {name:'Thessaloniki',sub:'Macedonia, Greece',country:'Greece',flag:'🇬🇷',entity:'27544759'},
-  {name:'Zakynthos',sub:'Ionian Islands, Greece',country:'Greece',flag:'🇬🇷',entity:'27544789'},
-  {name:'Kos',sub:'Dodecanese, Greece',country:'Greece',flag:'🇬🇷',entity:'27544647'},
-  {name:'Paros',sub:'Cyclades, Greece',country:'Greece',flag:'🇬🇷',entity:'27544706'},
-  {name:'Skiathos',sub:'Sporades, Greece',country:'Greece',flag:'🇬🇷',entity:'27544748'},
-  {name:'Kefalonia',sub:'Ionian Islands, Greece',country:'Greece',flag:'🇬🇷',entity:'27544638'},
-  {name:'Lefkada',sub:'Ionian Islands, Greece',country:'Greece',flag:'🇬🇷',entity:'27544653'},
-  {name:'Naxos',sub:'Cyclades, Greece',country:'Greece',flag:'🇬🇷',entity:'27544692'},
-  {name:'Halkidiki',sub:'Central Macedonia, Greece',country:'Greece',flag:'🇬🇷',entity:'27544597'},
-  /* ── PORTUGAL ── */
-  {name:'Lisbon',sub:'Portugal',country:'Portugal',flag:'🇵🇹',entity:'27545274'},
-  {name:'Porto',sub:'Portugal',country:'Portugal',flag:'🇵🇹',entity:'27545287'},
-  {name:'Algarve',sub:'Region, Portugal',country:'Portugal',flag:'🇵🇹',entity:'27545249'},
-  {name:'Madeira',sub:'Island, Portugal',country:'Portugal',flag:'🇵🇹',entity:'27545278'},
-  {name:'Azores',sub:'Islands, Portugal',country:'Portugal',flag:'🇵🇹',entity:'27545252'},
-  {name:'Lagos',sub:'Algarve, Portugal',country:'Portugal',flag:'🇵🇹',entity:'27545272'},
-  {name:'Cascais',sub:'Lisbon Coast, Portugal',country:'Portugal',flag:'🇵🇹',entity:'27545259'},
-  /* ── NETHERLANDS ── */
-  {name:'Amsterdam',sub:'Netherlands',country:'Netherlands',flag:'🇳🇱',entity:'27537150'},
-  {name:'Rotterdam',sub:'Netherlands',country:'Netherlands',flag:'🇳🇱',entity:'27537178'},
-  {name:'The Hague',sub:'Netherlands',country:'Netherlands',flag:'🇳🇱',entity:'27537182'},
-  /* ── GERMANY ── */
-  {name:'Berlin',sub:'Germany',country:'Germany',flag:'🇩🇪',entity:'27537087'},
-  {name:'Munich',sub:'Bavaria, Germany',country:'Germany',flag:'🇩🇪',entity:'27537135'},
-  {name:'Hamburg',sub:'Germany',country:'Germany',flag:'🇩🇪',entity:'27537102'},
-  {name:'Frankfurt',sub:'Hesse, Germany',country:'Germany',flag:'🇩🇪',entity:'27537095'},
-  {name:'Cologne',sub:'North Rhine-Westphalia, Germany',country:'Germany',flag:'🇩🇪',entity:'27537091'},
-  {name:'Düsseldorf',sub:'North Rhine-Westphalia, Germany',country:'Germany',flag:'🇩🇪',entity:'27537093'},
-  {name:'Dresden',sub:'Saxony, Germany',country:'Germany',flag:'🇩🇪',entity:'27537092'},
-  {name:'Stuttgart',sub:'Baden-Württemberg, Germany',country:'Germany',flag:'🇩🇪',entity:'27537140'},
-  {name:'Heidelberg',sub:'Baden-Württemberg, Germany',country:'Germany',flag:'🇩🇪',entity:'27537104'},
-  {name:'Rothenburg',sub:'Bavaria, Germany',country:'Germany',flag:'🇩🇪',entity:'27537131'},
-  /* ── AUSTRIA & SWITZERLAND ── */
-  {name:'Vienna',sub:'Austria',country:'Austria',flag:'🇦🇹',entity:'27546853'},
-  {name:'Salzburg',sub:'Austria',country:'Austria',flag:'🇦🇹',entity:'27546824'},
-  {name:'Innsbruck',sub:'Tyrol, Austria',country:'Austria',flag:'🇦🇹',entity:'27546807'},
-  {name:'Hallstatt',sub:'Upper Austria',country:'Austria',flag:'🇦🇹',entity:'27546803'},
-  {name:'Zurich',sub:'Switzerland',country:'Switzerland',flag:'🇨🇭',entity:'27546900'},
-  {name:'Geneva',sub:'Switzerland',country:'Switzerland',flag:'🇨🇭',entity:'27546864'},
-  {name:'Interlaken',sub:'Bern, Switzerland',country:'Switzerland',flag:'🇨🇭',entity:'27546873'},
-  {name:'Lucerne',sub:'Switzerland',country:'Switzerland',flag:'🇨🇭',entity:'27546880'},
-  {name:'Zermatt',sub:'Valais, Switzerland',country:'Switzerland',flag:'🇨🇭',entity:'27546902'},
-  {name:'St Moritz',sub:'Graubünden, Switzerland',country:'Switzerland',flag:'🇨🇭',entity:'27546897'},
-  /* ── BELGIUM & LUXEMBOURG ── */
-  {name:'Brussels',sub:'Belgium',country:'Belgium',flag:'🇧🇪',entity:'27537124'},
-  {name:'Bruges',sub:'West Flanders, Belgium',country:'Belgium',flag:'🇧🇪',entity:'27537122'},
-  {name:'Ghent',sub:'East Flanders, Belgium',country:'Belgium',flag:'🇧🇪',entity:'27537098'},
-  {name:'Antwerp',sub:'Belgium',country:'Belgium',flag:'🇧🇪',entity:'27537083'},
-  {name:'Luxembourg City',sub:'Luxembourg',country:'Luxembourg',flag:'🇱🇺',entity:'27537126'},
-  /* ── SCANDINAVIA ── */
-  {name:'Copenhagen',sub:'Denmark',country:'Denmark',flag:'🇩🇰',entity:'27537156'},
-  {name:'Stockholm',sub:'Sweden',country:'Sweden',flag:'🇸🇪',entity:'27545395'},
-  {name:'Oslo',sub:'Norway',country:'Norway',flag:'🇳🇴',entity:'27545340'},
-  {name:'Helsinki',sub:'Finland',country:'Finland',flag:'🇫🇮',entity:'27536785'},
-  {name:'Bergen',sub:'Norway',country:'Norway',flag:'🇳🇴',entity:'27545318'},
-  {name:'Reykjavik',sub:'Iceland',country:'Iceland',flag:'🇮🇸',entity:'27545140'},
-  {name:'Tromsø',sub:'Arctic Norway',country:'Norway',flag:'🇳🇴',entity:'27545372'},
-  {name:'Gothenburg',sub:'Sweden',country:'Sweden',flag:'🇸🇪',entity:'27545367'},
-  {name:'Malmö',sub:'Sweden',country:'Sweden',flag:'🇸🇪',entity:'27545384'},
-  {name:'Ålesund',sub:'Norway',country:'Norway',flag:'🇳🇴',entity:'27545305'},
-  {name:'Rovaniemi',sub:'Lapland, Finland',country:'Finland',flag:'🇫🇮',entity:'27536793'},
-  {name:'Tallinn',sub:'Estonia',country:'Estonia',flag:'🇪🇪',entity:'27545408'},
-  {name:'Riga',sub:'Latvia',country:'Latvia',flag:'🇱🇻',entity:'27545461'},
-  {name:'Vilnius',sub:'Lithuania',country:'Lithuania',flag:'🇱🇹',entity:'27545467'},
-  /* ── EASTERN EUROPE ── */
-  {name:'Prague',sub:'Czech Republic',country:'Czech Republic',flag:'🇨🇿',entity:'27537190'},
-  {name:'Budapest',sub:'Hungary',country:'Hungary',flag:'🇭🇺',entity:'27537139'},
-  {name:'Warsaw',sub:'Poland',country:'Poland',flag:'🇵🇱',entity:'27545475'},
-  {name:'Krakow',sub:'Lesser Poland',country:'Poland',flag:'🇵🇱',entity:'27545432'},
-  {name:'Gdansk',sub:'Pomerania, Poland',country:'Poland',flag:'🇵🇱',entity:'27545422'},
-  {name:'Vienna',sub:'Austria',country:'Austria',flag:'🇦🇹',entity:'27546853'},
-  {name:'Bratislava',sub:'Slovakia',country:'Slovakia',flag:'🇸🇰',entity:'27537118'},
-  {name:'Ljubljana',sub:'Slovenia',country:'Slovenia',flag:'🇸🇮',entity:'27537125'},
-  {name:'Dubrovnik',sub:'Croatia',country:'Croatia',flag:'🇭🇷',entity:'27537224'},
-  {name:'Split',sub:'Dalmatia, Croatia',country:'Croatia',flag:'🇭🇷',entity:'27537252'},
-  {name:'Hvar',sub:'Dalmatia, Croatia',country:'Croatia',flag:'🇭🇷',entity:'27537232'},
-  {name:'Dubrovnik',sub:'Croatia',country:'Croatia',flag:'🇭🇷',entity:'27537224'},
-  {name:'Zagreb',sub:'Croatia',country:'Croatia',flag:'🇭🇷',entity:'27537256'},
-  {name:'Bucharest',sub:'Romania',country:'Romania',flag:'🇷🇴',entity:'27545622'},
-  {name:'Sofia',sub:'Bulgaria',country:'Bulgaria',flag:'🇧🇬',entity:'27537113'},
-  {name:'Belgrade',sub:'Serbia',country:'Serbia',flag:'🇷🇸',entity:'27537093'},
-  {name:'Sarajevo',sub:'Bosnia & Herzegovina',country:'Bosnia',flag:'🇧🇦',entity:'27537112'},
-  {name:'Podgorica',sub:'Montenegro',country:'Montenegro',flag:'🇲🇪',entity:'27537143'},
-  {name:'Kotor',sub:'Montenegro',country:'Montenegro',flag:'🇲🇪',entity:'27537123'},
-  {name:'Tirana',sub:'Albania',country:'Albania',flag:'🇦🇱',entity:'27537081'},
-  {name:'Kyiv',sub:'Ukraine',country:'Ukraine',flag:'🇺🇦',entity:'27545425'},
-  /* ── CAUCASUS & CENTRAL ASIA ── */
-  {name:'Tbilisi',sub:'Georgia',country:'Georgia',flag:'🇬🇪',entity:'27547561'},
-  {name:'Batumi',sub:'Adjara, Georgia',country:'Georgia',flag:'🇬🇪',entity:'27547525'},
-  {name:'Kazbegi',sub:'Mtskheta-Mtianeti, Georgia',country:'Georgia',flag:'🇬🇪',entity:'27547549'},
-  {name:'Yerevan',sub:'Armenia',country:'Armenia',flag:'🇦🇲',entity:'27547585'},
-  {name:'Baku',sub:'Azerbaijan',country:'Azerbaijan',flag:'🇦🇿',entity:'27547521'},
-  {name:'Tashkent',sub:'Uzbekistan',country:'Uzbekistan',flag:'🇺🇿',entity:'27547569'},
-  {name:'Samarkand',sub:'Uzbekistan',country:'Uzbekistan',flag:'🇺🇿',entity:'27547561'},
-  {name:'Bukhara',sub:'Uzbekistan',country:'Uzbekistan',flag:'🇺🇿',entity:'27547527'},
-  {name:'Almaty',sub:'Kazakhstan',country:'Kazakhstan',flag:'🇰🇿',entity:'27547512'},
-  {name:'Astana',sub:'Kazakhstan',country:'Kazakhstan',flag:'🇰🇿',entity:'27547516'},
-  {name:'Ashgabat',sub:'Turkmenistan',country:'Turkmenistan',flag:'🇹🇲',entity:'27547518'},
-  /* ── INDIA ── */
-  {name:'Mumbai',sub:'Maharashtra, India',country:'India',flag:'🇮🇳',entity:'27543783'},
-  {name:'New Delhi',sub:'India',country:'India',flag:'🇮🇳',entity:'27543820'},
-  {name:'Goa',sub:'India',country:'India',flag:'🇮🇳',entity:'27543703'},
-  {name:'Jaipur',sub:'Rajasthan, India',country:'India',flag:'🇮🇳',entity:'27543726'},
-  {name:'Agra',sub:'Uttar Pradesh, India',country:'India',flag:'🇮🇳',entity:'27543660'},
-  {name:'Bangalore',sub:'Karnataka, India',country:'India',flag:'🇮🇳',entity:'27543672'},
-  {name:'Chennai',sub:'Tamil Nadu, India',country:'India',flag:'🇮🇳',entity:'27543685'},
-  {name:'Kolkata',sub:'West Bengal, India',country:'India',flag:'🇮🇳',entity:'27543748'},
-  {name:'Udaipur',sub:'Rajasthan, India',country:'India',flag:'🇮🇳',entity:'27543854'},
-  {name:'Varanasi',sub:'Uttar Pradesh, India',country:'India',flag:'🇮🇳',entity:'27543858'},
-  {name:'Kerala',sub:'India',country:'India',flag:'🇮🇳',entity:'27543740'},
-  {name:'Hyderabad',sub:'Telangana, India',country:'India',flag:'🇮🇳',entity:'27543722'},
-  {name:'Amritsar',sub:'Punjab, India',country:'India',flag:'🇮🇳',entity:'27543666'},
-  {name:'Rishikesh',sub:'Uttarakhand, India',country:'India',flag:'🇮🇳',entity:'27543836'},
-  {name:'Shimla',sub:'Himachal Pradesh, India',country:'India',flag:'🇮🇳',entity:'27543841'},
-  {name:'Darjeeling',sub:'West Bengal, India',country:'India',flag:'🇮🇳',entity:'27543691'},
-  /* ── PAKISTAN ── */
-  {name:'Karachi',sub:'Sindh, Pakistan',country:'Pakistan',flag:'🇵🇰',entity:'27543736'},
-  {name:'Lahore',sub:'Punjab, Pakistan',country:'Pakistan',flag:'🇵🇰',entity:'27543748'},
-  {name:'Islamabad',sub:'Pakistan',country:'Pakistan',flag:'🇵🇰',entity:'27543724'},
-  {name:'Peshawar',sub:'Khyber Pakhtunkhwa, Pakistan',country:'Pakistan',flag:'🇵🇰',entity:'27543816'},
-  {name:'Quetta',sub:'Balochistan, Pakistan',country:'Pakistan',flag:'🇵🇰',entity:'27543831'},
-  {name:'Murree',sub:'Punjab, Pakistan',country:'Pakistan',flag:'🇵🇰',entity:'27543799'},
-  {name:'Naran',sub:'Khyber Pakhtunkhwa, Pakistan',country:'Pakistan',flag:'🇵🇰',entity:'27543800'},
-  {name:'Hunza',sub:'Gilgit-Baltistan, Pakistan',country:'Pakistan',flag:'🇵🇰',entity:'27543720'},
-  {name:'Swat',sub:'Khyber Pakhtunkhwa, Pakistan',country:'Pakistan',flag:'🇵🇰',entity:'27543849'},
-  {name:'Faisalabad',sub:'Punjab, Pakistan',country:'Pakistan',flag:'🇵🇰',entity:'27543697'},
-  {name:'Multan',sub:'Punjab, Pakistan',country:'Pakistan',flag:'🇵🇰',entity:'27543797'},
-  {name:'Sialkot',sub:'Punjab, Pakistan',country:'Pakistan',flag:'🇵🇰',entity:'27543842'},
-  /* ── BANGLADESH ── */
-  {name:'Dhaka',sub:'Bangladesh',country:'Bangladesh',flag:'🇧🇩',entity:'27543616'},
-  {name:'Chittagong',sub:'Bangladesh',country:'Bangladesh',flag:'🇧🇩',entity:'27543612'},
-  {name:"Cox's Bazar",sub:'Chittagong Division, Bangladesh',country:'Bangladesh',flag:'🇧🇩',entity:'27543614'},
-  {name:'Sylhet',sub:'Bangladesh',country:'Bangladesh',flag:'🇧🇩',entity:'27543644'},
-  /* ── SRI LANKA ── */
-  {name:'Colombo',sub:'Western Province, Sri Lanka',country:'Sri Lanka',flag:'🇱🇰',entity:'27543736'},
-  {name:'Kandy',sub:'Central Province, Sri Lanka',country:'Sri Lanka',flag:'🇱🇰',entity:'27543737'},
-  {name:'Galle',sub:'Southern Province, Sri Lanka',country:'Sri Lanka',flag:'🇱🇰',entity:'27543700'},
-  {name:'Sigiriya',sub:'Central Province, Sri Lanka',country:'Sri Lanka',flag:'🇱🇰',entity:'27543840'},
-  {name:'Ella',sub:'Uva Province, Sri Lanka',country:'Sri Lanka',flag:'🇱🇰',entity:'27543695'},
-  /* ── NEPAL ── */
-  {name:'Kathmandu',sub:'Nepal',country:'Nepal',flag:'🇳🇵',entity:'27543738'},
-  {name:'Pokhara',sub:'Gandaki, Nepal',country:'Nepal',flag:'🇳🇵',entity:'27543818'},
-  {name:'Chitwan',sub:'Bagmati, Nepal',country:'Nepal',flag:'🇳🇵',entity:'27543611'},
-  /* ── MALDIVES ── */
-  {name:'Maldives',sub:'Island country',country:'Maldives',flag:'🇲🇻',entity:'29475378'},
-  {name:'Malé',sub:'Maldives',country:'Maldives',flag:'🇲🇻',entity:'27545521'},
-  {name:'North Malé Atoll',sub:'Maldives',country:'Maldives',flag:'🇲🇻',entity:'27545535'},
-  {name:'Baa Atoll',sub:'UNESCO Biosphere, Maldives',country:'Maldives',flag:'🇲🇻',entity:'27545502'},
-  {name:'Ari Atoll',sub:'Maldives',country:'Maldives',flag:'🇲🇻',entity:'27545499'},
-  /* ── THAILAND ── */
-  {name:'Bangkok',sub:'Thailand',country:'Thailand',flag:'🇹🇭',entity:'27539733'},
-  {name:'Phuket',sub:'Thailand',country:'Thailand',flag:'🇹🇭',entity:'27539879'},
-  {name:'Chiang Mai',sub:'Northern Thailand',country:'Thailand',flag:'🇹🇭',entity:'27539751'},
-  {name:'Krabi',sub:'Thailand',country:'Thailand',flag:'🇹🇭',entity:'27539791'},
-  {name:'Koh Samui',sub:'Surat Thani, Thailand',country:'Thailand',flag:'🇹🇭',entity:'27539783'},
-  {name:'Koh Phi Phi',sub:'Krabi, Thailand',country:'Thailand',flag:'🇹🇭',entity:'27539780'},
-  {name:'Pattaya',sub:'Chonburi, Thailand',country:'Thailand',flag:'🇹🇭',entity:'27539872'},
-  {name:'Hua Hin',sub:'Prachuap, Thailand',country:'Thailand',flag:'🇹🇭',entity:'27539771'},
-  {name:'Koh Chang',sub:'Trat, Thailand',country:'Thailand',flag:'🇹🇭',entity:'27539774'},
-  {name:'Pai',sub:'Mae Hong Son, Thailand',country:'Thailand',flag:'🇹🇭',entity:'27539867'},
-  /* ── INDONESIA ── */
-  {name:'Bali',sub:'Indonesia',country:'Indonesia',flag:'🇮🇩',entity:'27537536'},
-  {name:'Ubud',sub:'Bali, Indonesia',country:'Indonesia',flag:'🇮🇩',entity:'27537773'},
-  {name:'Seminyak',sub:'Bali, Indonesia',country:'Indonesia',flag:'🇮🇩',entity:'27537719'},
-  {name:'Kuta',sub:'Bali, Indonesia',country:'Indonesia',flag:'🇮🇩',entity:'27537615'},
-  {name:'Nusa Dua',sub:'Bali, Indonesia',country:'Indonesia',flag:'🇮🇩',entity:'27537663'},
-  {name:'Jakarta',sub:'Indonesia',country:'Indonesia',flag:'🇮🇩',entity:'27537584'},
-  {name:'Lombok',sub:'West Nusa Tenggara, Indonesia',country:'Indonesia',flag:'🇮🇩',entity:'27537628'},
-  {name:'Yogyakarta',sub:'Java, Indonesia',country:'Indonesia',flag:'🇮🇩',entity:'27537812'},
-  {name:'Gili Islands',sub:'Lombok, Indonesia',country:'Indonesia',flag:'🇮🇩',entity:'27537572'},
-  {name:'Raja Ampat',sub:'West Papua, Indonesia',country:'Indonesia',flag:'🇮🇩',entity:'27537685'},
-  {name:'Komodo',sub:'East Nusa Tenggara, Indonesia',country:'Indonesia',flag:'🇮🇩',entity:'27537609'},
-  /* ── MALAYSIA ── */
-  {name:'Kuala Lumpur',sub:'Malaysia',country:'Malaysia',flag:'🇲🇾',entity:'27536644'},
-  {name:'Penang',sub:'Malaysia',country:'Malaysia',flag:'🇲🇾',entity:'27536650'},
-  {name:'Langkawi',sub:'Kedah, Malaysia',country:'Malaysia',flag:'🇲🇾',entity:'27536645'},
-  {name:'Kota Kinabalu',sub:'Sabah, Malaysia',country:'Malaysia',flag:'🇲🇾',entity:'27536642'},
-  {name:'Malacca',sub:'Malaysia',country:'Malaysia',flag:'🇲🇾',entity:'27536647'},
-  /* ── SINGAPORE ── */
-  {name:'Singapore',sub:'Singapore',country:'Singapore',flag:'🇸🇬',entity:'27536654'},
-  /* ── VIETNAM ── */
-  {name:'Ho Chi Minh City',sub:'Vietnam',country:'Vietnam',flag:'🇻🇳',entity:'27536610'},
-  {name:'Hanoi',sub:'Vietnam',country:'Vietnam',flag:'🇻🇳',entity:'27536606'},
-  {name:'Ha Long Bay',sub:'Quảng Ninh, Vietnam',country:'Vietnam',flag:'🇻🇳',entity:'27536605'},
-  {name:'Da Nang',sub:'Vietnam',country:'Vietnam',flag:'🇻🇳',entity:'27536602'},
-  {name:'Hoi An',sub:'Quảng Nam, Vietnam',country:'Vietnam',flag:'🇻🇳',entity:'27536611'},
-  {name:'Nha Trang',sub:'Khánh Hòa, Vietnam',country:'Vietnam',flag:'🇻🇳',entity:'27536619'},
-  {name:'Phú Quốc',sub:'Kiên Giang, Vietnam',country:'Vietnam',flag:'🇻🇳',entity:'27536621'},
-  {name:'Sapa',sub:'Lào Cai, Vietnam',country:'Vietnam',flag:'🇻🇳',entity:'27536624'},
-  /* ── CAMBODIA ── */
-  {name:'Siem Reap',sub:'Angkor, Cambodia',country:'Cambodia',flag:'🇰🇭',entity:'27536568'},
-  {name:'Phnom Penh',sub:'Cambodia',country:'Cambodia',flag:'🇰🇭',entity:'27536566'},
-  {name:'Koh Rong',sub:'Preah Sihanouk, Cambodia',country:'Cambodia',flag:'🇰🇭',entity:'27536565'},
-  /* ── PHILIPPINES ── */
-  {name:'Manila',sub:'Philippines',country:'Philippines',flag:'🇵🇭',entity:'27536552'},
-  {name:'Cebu',sub:'Visayas, Philippines',country:'Philippines',flag:'🇵🇭',entity:'27536530'},
-  {name:'Boracay',sub:'Aklan, Philippines',country:'Philippines',flag:'🇵🇭',entity:'27536527'},
-  {name:'Palawan',sub:'Philippines',country:'Philippines',flag:'🇵🇭',entity:'27536561'},
-  {name:'Siargao',sub:'Surigao del Norte, Philippines',country:'Philippines',flag:'🇵🇭',entity:'27536573'},
-  {name:'Bohol',sub:'Philippines',country:'Philippines',flag:'🇵🇭',entity:'27536526'},
-  /* ── JAPAN ── */
-  {name:'Tokyo',sub:'Japan',country:'Japan',flag:'🇯🇵',entity:'27545939'},
-  {name:'Osaka',sub:'Japan',country:'Japan',flag:'🇯🇵',entity:'27545906'},
-  {name:'Kyoto',sub:'Japan',country:'Japan',flag:'🇯🇵',entity:'27545874'},
-  {name:'Hiroshima',sub:'Japan',country:'Japan',flag:'🇯🇵',entity:'27545846'},
-  {name:'Nara',sub:'Japan',country:'Japan',flag:'🇯🇵',entity:'27545900'},
-  {name:'Fukuoka',sub:'Kyushu, Japan',country:'Japan',flag:'🇯🇵',entity:'27545839'},
-  {name:'Hokkaido',sub:'Japan',country:'Japan',flag:'🇯🇵',entity:'27545848'},
-  {name:'Hakone',sub:'Kanagawa, Japan',country:'Japan',flag:'🇯🇵',entity:'27545843'},
-  {name:'Sapporo',sub:'Hokkaido, Japan',country:'Japan',flag:'🇯🇵',entity:'27545921'},
-  {name:'Okinawa',sub:'Japan',country:'Japan',flag:'🇯🇵',entity:'27545903'},
-  {name:'Nikko',sub:'Tochigi, Japan',country:'Japan',flag:'🇯🇵',entity:'27545902'},
-  /* ── SOUTH KOREA ── */
-  {name:'Seoul',sub:'South Korea',country:'South Korea',flag:'🇰🇷',entity:'27545982'},
-  {name:'Busan',sub:'South Korea',country:'South Korea',flag:'🇰🇷',entity:'27545957'},
-  {name:'Jeju',sub:'Jeju Island, South Korea',country:'South Korea',flag:'🇰🇷',entity:'27545967'},
-  {name:'Gyeongju',sub:'North Gyeongsang, South Korea',country:'South Korea',flag:'🇰🇷',entity:'27545963'},
-  /* ── CHINA ── */
-  {name:'Beijing',sub:'China',country:'China',flag:'🇨🇳',entity:'27545973'},
-  {name:'Shanghai',sub:'China',country:'China',flag:'🇨🇳',entity:'27546001'},
-  {name:'Hong Kong',sub:'Hong Kong SAR',country:'Hong Kong',flag:'🇭🇰',entity:'27545996'},
-  {name:'Guangzhou',sub:'Guangdong, China',country:'China',flag:'🇨🇳',entity:'27545991'},
-  {name:'Shenzhen',sub:'Guangdong, China',country:'China',flag:'🇨🇳',entity:'27546004'},
-  {name:'Chengdu',sub:'Sichuan, China',country:'China',flag:'🇨🇳',entity:'27545978'},
-  {name:'Xi\'an',sub:'Shaanxi, China',country:'China',flag:'🇨🇳',entity:'27546019'},
-  {name:'Guilin',sub:'Guangxi, China',country:'China',flag:'🇨🇳',entity:'27545992'},
-  {name:'Zhangjiajie',sub:'Hunan, China',country:'China',flag:'🇨🇳',entity:'27546020'},
-  /* ── TAIWAN & MACAU ── */
-  {name:'Taipei',sub:'Taiwan',country:'Taiwan',flag:'🇹🇼',entity:'27546017'},
-  {name:'Macau',sub:'Macau SAR',country:'Macau',flag:'🇲🇴',entity:'27545997'},
-  /* ── KENYA & EAST AFRICA ── */
-  {name:'Nairobi',sub:'Kenya',country:'Kenya',flag:'🇰🇪',entity:'27544248'},
-  {name:'Mombasa',sub:'Kenya',country:'Kenya',flag:'🇰🇪',entity:'27544220'},
-  {name:'Maasai Mara',sub:'Narok, Kenya',country:'Kenya',flag:'🇰🇪',entity:'27544213'},
-  {name:'Diani Beach',sub:'Kwale, Kenya',country:'Kenya',flag:'🇰🇪',entity:'27544193'},
-  {name:'Zanzibar',sub:'Tanzania',country:'Tanzania',flag:'🇹🇿',entity:'27544451'},
-  {name:'Dar es Salaam',sub:'Tanzania',country:'Tanzania',flag:'🇹🇿',entity:'27544359'},
-  {name:'Serengeti',sub:'Tanzania',country:'Tanzania',flag:'🇹🇿',entity:'27544428'},
-  {name:'Kilimanjaro',sub:'Kilimanjaro Region, Tanzania',country:'Tanzania',flag:'🇹🇿',entity:'27544388'},
-  {name:'Arusha',sub:'Tanzania',country:'Tanzania',flag:'🇹🇿',entity:'27544345'},
-  {name:'Kampala',sub:'Uganda',country:'Uganda',flag:'🇺🇬',entity:'27544225'},
-  {name:'Kigali',sub:'Rwanda',country:'Rwanda',flag:'🇷🇼',entity:'27544115'},
-  {name:'Addis Ababa',sub:'Ethiopia',country:'Ethiopia',flag:'🇪🇹',entity:'27538166'},
-  {name:'Lalibela',sub:'Amhara Region, Ethiopia',country:'Ethiopia',flag:'🇪🇹',entity:'27538195'},
-  /* ── SOMALIA ── */
-  {name:'Mogadishu',sub:'Banadir, Somalia',country:'Somalia',flag:'🇸🇴',entity:'27544180'},
-  {name:'Hargeisa',sub:'Somaliland, Somalia',country:'Somalia',flag:'🇸🇴',entity:'27544145'},
-  {name:'Kismayo',sub:'Jubaland, Somalia',country:'Somalia',flag:'🇸🇴',entity:'27544155'},
-  {name:'Bosaso',sub:'Puntland, Somalia',country:'Somalia',flag:'🇸🇴',entity:'27544130'},
-  /* ── WEST & CENTRAL AFRICA ── */
-  {name:'Lagos',sub:'Nigeria',country:'Nigeria',flag:'🇳🇬',entity:'27544002'},
-  {name:'Abuja',sub:'FCT, Nigeria',country:'Nigeria',flag:'🇳🇬',entity:'27543965'},
-  {name:'Accra',sub:'Ghana',country:'Ghana',flag:'🇬🇭',entity:'27537800'},
-  {name:'Lomé',sub:'Togo',country:'Togo',flag:'🇹🇬',entity:'27544040'},
-  {name:'Dakar',sub:'Senegal',country:'Senegal',flag:'🇸🇳',entity:'27537820'},
-  {name:'Abidjan',sub:'Côte d\'Ivoire',country:'Côte d\'Ivoire',flag:'🇨🇮',entity:'27537790'},
-  /* ── SOUTH AFRICA ── */
-  {name:'Cape Town',sub:'Western Cape, South Africa',country:'South Africa',flag:'🇿🇦',entity:'27543847'},
-  {name:'Johannesburg',sub:'Gauteng, South Africa',country:'South Africa',flag:'🇿🇦',entity:'27543870'},
-  {name:'Durban',sub:'KwaZulu-Natal, South Africa',country:'South Africa',flag:'🇿🇦',entity:'27543855'},
-  {name:'Kruger National Park',sub:'Mpumalanga, South Africa',country:'South Africa',flag:'🇿🇦',entity:'27543876'},
-  {name:'Garden Route',sub:'Western Cape, South Africa',country:'South Africa',flag:'🇿🇦',entity:'27543860'},
-  {name:'Stellenbosch',sub:'Western Cape, South Africa',country:'South Africa',flag:'🇿🇦',entity:'27543883'},
-  {name:'Victoria Falls',sub:'Zimbabwe / Zambia',country:'Zimbabwe',flag:'🇿🇼',entity:'27544460'},
-  {name:'Windhoek',sub:'Namibia',country:'Namibia',flag:'🇳🇦',entity:'27544075'},
-  {name:'Gaborone',sub:'Botswana',country:'Botswana',flag:'🇧🇼',entity:'27543998'},
-  {name:'Mauritius',sub:'Island nation',country:'Mauritius',flag:'🇲🇺',entity:'27545556'},
-  {name:'Seychelles',sub:'Island nation',country:'Seychelles',flag:'🇸🇨',entity:'27545570'},
-  {name:'Réunion',sub:'French island',country:'Réunion',flag:'🇷🇪',entity:'27545563'},
-  /* ── USA ── */
-  {name:'New York',sub:'New York, USA',country:'USA',flag:'🇺🇸',entity:'27537542'},
-  {name:'Los Angeles',sub:'California, USA',country:'USA',flag:'🇺🇸',entity:'27536543'},
-  {name:'Miami',sub:'Florida, USA',country:'USA',flag:'🇺🇸',entity:'27536563'},
-  {name:'Las Vegas',sub:'Nevada, USA',country:'USA',flag:'🇺🇸',entity:'27536540'},
-  {name:'Chicago',sub:'Illinois, USA',country:'USA',flag:'🇺🇸',entity:'27536434'},
-  {name:'San Francisco',sub:'California, USA',country:'USA',flag:'🇺🇸',entity:'27536588'},
-  {name:'Orlando',sub:'Florida, USA',country:'USA',flag:'🇺🇸',entity:'27536568'},
-  {name:'Washington DC',sub:'USA',country:'USA',flag:'🇺🇸',entity:'27536621'},
-  {name:'New Orleans',sub:'Louisiana, USA',country:'USA',flag:'🇺🇸',entity:'27536565'},
-  {name:'Boston',sub:'Massachusetts, USA',country:'USA',flag:'🇺🇸',entity:'27536403'},
-  {name:'Seattle',sub:'Washington, USA',country:'USA',flag:'🇺🇸',entity:'27536595'},
-  {name:'Nashville',sub:'Tennessee, USA',country:'USA',flag:'🇺🇸',entity:'27536564'},
-  {name:'Denver',sub:'Colorado, USA',country:'USA',flag:'🇺🇸',entity:'27536461'},
-  {name:'Honolulu',sub:'Hawaii, USA',country:'USA',flag:'🇺🇸',entity:'27536505'},
-  {name:'Hawaii',sub:'USA',country:'USA',flag:'🇺🇸',entity:'27536499'},
-  {name:'Maui',sub:'Hawaii, USA',country:'USA',flag:'🇺🇸',entity:'27536557'},
-  {name:'Austin',sub:'Texas, USA',country:'USA',flag:'🇺🇸',entity:'27536396'},
-  {name:'San Diego',sub:'California, USA',country:'USA',flag:'🇺🇸',entity:'27536585'},
-  {name:'Phoenix',sub:'Arizona, USA',country:'USA',flag:'🇺🇸',entity:'27536577'},
-  {name:'Atlanta',sub:'Georgia, USA',country:'USA',flag:'🇺🇸',entity:'27536393'},
-  {name:'Dallas',sub:'Texas, USA',country:'USA',flag:'🇺🇸',entity:'27536454'},
-  {name:'Portland',sub:'Oregon, USA',country:'USA',flag:'🇺🇸',entity:'27536580'},
-  {name:'Grand Canyon',sub:'Arizona, USA',country:'USA',flag:'🇺🇸',entity:'27536491'},
-  /* ── CANADA ── */
-  {name:'Toronto',sub:'Ontario, Canada',country:'Canada',flag:'🇨🇦',entity:'27536713'},
-  {name:'Vancouver',sub:'BC, Canada',country:'Canada',flag:'🇨🇦',entity:'27536719'},
-  {name:'Montreal',sub:'Quebec, Canada',country:'Canada',flag:'🇨🇦',entity:'27536680'},
-  {name:'Banff',sub:'Alberta, Canada',country:'Canada',flag:'🇨🇦',entity:'27536639'},
-  {name:'Quebec City',sub:'Canada',country:'Canada',flag:'🇨🇦',entity:'27536695'},
-  {name:'Whistler',sub:'BC, Canada',country:'Canada',flag:'🇨🇦',entity:'27536727'},
-  {name:'Niagara Falls',sub:'Ontario, Canada',country:'Canada',flag:'🇨🇦',entity:'27536683'},
-  {name:'Calgary',sub:'Alberta, Canada',country:'Canada',flag:'🇨🇦',entity:'27536644'},
-  {name:'Ottawa',sub:'Ontario, Canada',country:'Canada',flag:'🇨🇦',entity:'27536685'},
-  /* ── MEXICO & CARIBBEAN ── */
-  {name:'Cancún',sub:'Quintana Roo, Mexico',country:'Mexico',flag:'🇲🇽',entity:'27536359'},
-  {name:'Mexico City',sub:'Mexico',country:'Mexico',flag:'🇲🇽',entity:'27536390'},
-  {name:'Tulum',sub:'Quintana Roo, Mexico',country:'Mexico',flag:'🇲🇽',entity:'27536492'},
-  {name:'Playa del Carmen',sub:'Quintana Roo, Mexico',country:'Mexico',flag:'🇲🇽',entity:'27536437'},
-  {name:'Los Cabos',sub:'Baja California, Mexico',country:'Mexico',flag:'🇲🇽',entity:'27536383'},
-  {name:'Puerto Vallarta',sub:'Jalisco, Mexico',country:'Mexico',flag:'🇲🇽',entity:'27536451'},
-  {name:'Guadalajara',sub:'Jalisco, Mexico',country:'Mexico',flag:'🇲🇽',entity:'27536366'},
-  {name:'Punta Cana',sub:'Dominican Republic',country:'Dominican Republic',flag:'🇩🇴',entity:'27536455'},
-  {name:'Santo Domingo',sub:'Dominican Republic',country:'Dominican Republic',flag:'🇩🇴',entity:'27536465'},
-  {name:'Montego Bay',sub:'Jamaica',country:'Jamaica',flag:'🇯🇲',entity:'27536393'},
-  {name:'Negril',sub:'Westmoreland, Jamaica',country:'Jamaica',flag:'🇯🇲',entity:'27536398'},
-  {name:'Havana',sub:'Cuba',country:'Cuba',flag:'🇨🇺',entity:'27536361'},
-  {name:'Varadero',sub:'Matanzas, Cuba',country:'Cuba',flag:'🇨🇺',entity:'27536497'},
-  {name:'Nassau',sub:'Bahamas',country:'Bahamas',flag:'🇧🇸',entity:'27536399'},
-  {name:'Bridgetown',sub:'Barbados',country:'Barbados',flag:'🇧🇧',entity:'27536350'},
-  {name:'St Lucia',sub:'Caribbean',country:'St Lucia',flag:'🇱🇨',entity:'27536471'},
-  {name:'Aruba',sub:'Caribbean',country:'Aruba',flag:'🇦🇼',entity:'27536342'},
-  {name:'Antigua',sub:'Caribbean',country:'Antigua',flag:'🇦🇬',entity:'27536339'},
-  {name:'Turks and Caicos',sub:'Caribbean',country:'Turks and Caicos',flag:'🇹🇨',entity:'27536490'},
-  {name:'St Kitts',sub:'Caribbean',country:'St Kitts',flag:'🇰🇳',entity:'27536469'},
-  {name:'Grenada',sub:'Caribbean',country:'Grenada',flag:'🇬🇩',entity:'27536363'},
-  /* ── SOUTH AMERICA ── */
-  {name:'Rio de Janeiro',sub:'Brazil',country:'Brazil',flag:'🇧🇷',entity:'27536283'},
-  {name:'São Paulo',sub:'Brazil',country:'Brazil',flag:'🇧🇷',entity:'27536287'},
-  {name:'Buenos Aires',sub:'Argentina',country:'Argentina',flag:'🇦🇷',entity:'27536227'},
-  {name:'Lima',sub:'Peru',country:'Peru',flag:'🇵🇪',entity:'27536264'},
-  {name:'Cusco',sub:'Peru',country:'Peru',flag:'🇵🇪',entity:'27536238'},
-  {name:'Machu Picchu',sub:'Cusco Region, Peru',country:'Peru',flag:'🇵🇪',entity:'27536266'},
-  {name:'Bogotá',sub:'Colombia',country:'Colombia',flag:'🇨🇴',entity:'27536231'},
-  {name:'Medellín',sub:'Antioquia, Colombia',country:'Colombia',flag:'🇨🇴',entity:'27536267'},
-  {name:'Cartagena',sub:'Bolívar, Colombia',country:'Colombia',flag:'🇨🇴',entity:'27536234'},
-  {name:'Santiago',sub:'Chile',country:'Chile',flag:'🇨🇱',entity:'27536289'},
-  {name:'Patagonia',sub:'Argentina / Chile',country:'Argentina',flag:'🇦🇷',entity:'27536276'},
-  {name:'Galápagos',sub:'Ecuador',country:'Ecuador',flag:'🇪🇨',entity:'27536247'},
-  {name:'Quito',sub:'Ecuador',country:'Ecuador',flag:'🇪🇨',entity:'27536280'},
-  {name:'Montevideo',sub:'Uruguay',country:'Uruguay',flag:'🇺🇾',entity:'27536272'},
-  {name:'Asunción',sub:'Paraguay',country:'Paraguay',flag:'🇵🇾',entity:'27536225'},
-  {name:'La Paz',sub:'Bolivia',country:'Bolivia',flag:'🇧🇴',entity:'27536258'},
-  {name:'Iguazu Falls',sub:'Argentina / Brazil',country:'Argentina',flag:'🇦🇷',entity:'27536252'},
-  /* ── AUSTRALIA ── */
-  {name:'Sydney',sub:'New South Wales, Australia',country:'Australia',flag:'🇦🇺',entity:'27545688'},
-  {name:'Melbourne',sub:'Victoria, Australia',country:'Australia',flag:'🇦🇺',entity:'27545656'},
-  {name:'Brisbane',sub:'Queensland, Australia',country:'Australia',flag:'🇦🇺',entity:'27545604'},
-  {name:'Gold Coast',sub:'Queensland, Australia',country:'Australia',flag:'🇦🇺',entity:'27545631'},
-  {name:'Perth',sub:'Western Australia',country:'Australia',flag:'🇦🇺',entity:'27545673'},
-  {name:'Cairns',sub:'Queensland, Australia',country:'Australia',flag:'🇦🇺',entity:'27545609'},
-  {name:'Adelaide',sub:'South Australia',country:'Australia',flag:'🇦🇺',entity:'27545596'},
-  {name:'Great Barrier Reef',sub:'Queensland, Australia',country:'Australia',flag:'🇦🇺',entity:'27545633'},
-  {name:'Uluru',sub:'Northern Territory, Australia',country:'Australia',flag:'🇦🇺',entity:'27545694'},
-  /* ── NEW ZEALAND & PACIFIC ── */
-  {name:'Auckland',sub:'New Zealand',country:'New Zealand',flag:'🇳🇿',entity:'27545797'},
-  {name:'Queenstown',sub:'South Island, New Zealand',country:'New Zealand',flag:'🇳🇿',entity:'27545845'},
-  {name:'Rotorua',sub:'Bay of Plenty, New Zealand',country:'New Zealand',flag:'🇳🇿',entity:'27545849'},
-  {name:'Christchurch',sub:'Canterbury, New Zealand',country:'New Zealand',flag:'🇳🇿',entity:'27545813'},
-  {name:'Milford Sound',sub:'Fiordland, New Zealand',country:'New Zealand',flag:'🇳🇿',entity:'27545833'},
-  {name:'Bora Bora',sub:'French Polynesia',country:'French Polynesia',flag:'🇵🇫',entity:'27545794'},
-  {name:'Fiji',sub:'Pacific Islands',country:'Fiji',flag:'🇫🇯',entity:'27545822'},
-  {name:'Tahiti',sub:'French Polynesia',country:'French Polynesia',flag:'🇵🇫',entity:'27545857'},
-  {name:'Palau',sub:'Pacific Islands',country:'Palau',flag:'🇵🇼',entity:'27545862'},
-];
-
-
 /* ══ POPULAR LISTS ══ */
 const POPULAR_FROM=['LHR','MAN','BHX','EDI','GLA','BRS','NCL'];
 const POPULAR_TO  =['DXB','BCN','CDG','NRT','BKK','IST','JFK','SIN','MLE','CPT'];
-const POPULAR_HOTELS=['Dubai','Makkah','Madinah','London','Istanbul','Bangkok','Bali','Maldives','Paris','Barcelona','Tokyo','New York'];
 
 /* ══ URL UTILITIES ══ */
 const CITY_MAP={
@@ -2073,9 +1442,9 @@ window.addEventListener('scroll',function(){
 });
 
 /* Desktop extras */
-var extraState={direct:false,hotel:false};
+var extraState={direct:false};
 window.toggleExtra=function(key){
-  var k=key==='direct'?'direct':'hotel';
+  var k='direct';
   extraState[k]=!extraState[k];
   var btn=document.getElementById('toggle-'+key);
   if(btn)btn.classList.toggle('active',extraState[k]);
@@ -2187,68 +1556,6 @@ window.closePaxPanel=function(){
   document.body.style.overflow='';
 };
 
-window.toggleHotelPaxPortal=function(){
-  var portal=document.getElementById('hotel-pax-portal');
-  var trigger=document.getElementById('d-hotel-pax-trigger');
-  if(!portal||!trigger)return;
-  var isOpen=portal.style.display==='block';
-  if(isOpen){portal.style.display='none';return;}
-  var rect=trigger.getBoundingClientRect();
-  var panelW=300,screenW=window.innerWidth,margin=8;
-  var left=rect.right-panelW;
-  if(left<margin)left=margin;
-  if(left+panelW>screenW-margin)left=screenW-panelW-margin;
-  portal.style.top=(rect.bottom+8)+'px';
-  portal.style.left=left+'px';
-  portal.style.width=panelW+'px';
-  portal.style.display='block';
-  var ca=document.getElementById('d-count-hotel-adults');
-  var cc=document.getElementById('d-count-hotel-children');
-  var cr=document.getElementById('d-count-hotel-rooms');
-  if(ca)ca.textContent=mState.hotelAdults;
-  if(cc)cc.textContent=mState.hotelChildren;
-  if(cr)cr.textContent=mState.hotelRooms;
-  var bm=document.getElementById('d-btn-ham');if(bm)bm.disabled=mState.hotelAdults<=1;
-  var bp=document.getElementById('d-btn-hap');if(bp)bp.disabled=mState.hotelAdults>=30;
-  var bcm=document.getElementById('d-btn-hcm');if(bcm)bcm.disabled=mState.hotelChildren<=0;
-  var brm=document.getElementById('d-btn-hrm');if(brm)brm.disabled=mState.hotelRooms<=1;
-  var brp=document.getElementById('d-btn-hrp');if(brp)brp.disabled=mState.hotelRooms>=mState.hotelAdults;
-};
-
-window.closeHotelPaxPortal=function(){
-  var portal=document.getElementById('hotel-pax-portal');
-  if(portal)portal.style.display='none';
-};
-
-window.changeHotelCount=function(type,delta){
-  if(type==='adults'){
-    mState.hotelAdults=Math.max(1,Math.min(30,mState.hotelAdults+delta));
-    if(mState.hotelRooms>mState.hotelAdults)mState.hotelRooms=mState.hotelAdults;
-    var ca=document.getElementById('d-count-hotel-adults');if(ca)ca.textContent=mState.hotelAdults;
-    var bm=document.getElementById('d-btn-ham');if(bm)bm.disabled=mState.hotelAdults<=1;
-    var bp=document.getElementById('d-btn-hap');if(bp)bp.disabled=mState.hotelAdults>=30;
-    var cr=document.getElementById('d-count-hotel-rooms');if(cr)cr.textContent=mState.hotelRooms;
-    var brm=document.getElementById('d-btn-hrm');if(brm)brm.disabled=mState.hotelRooms<=1;
-    var brp=document.getElementById('d-btn-hrp');if(brp)brp.disabled=mState.hotelRooms>=mState.hotelAdults;
-  } else if(type==='children'){
-    mState.hotelChildren=Math.max(0,Math.min(10,mState.hotelChildren+delta));
-    var cc=document.getElementById('d-count-hotel-children');if(cc)cc.textContent=mState.hotelChildren;
-    var bcm=document.getElementById('d-btn-hcm');if(bcm)bcm.disabled=mState.hotelChildren<=0;
-    var bcp=document.getElementById('d-btn-hcp');if(bcp)bcp.disabled=mState.hotelChildren>=10;
-  } else if(type==='rooms'){
-    var next=mState.hotelRooms+delta;
-    if(next>mState.hotelAdults)return;
-    mState.hotelRooms=Math.max(1,Math.min(30,next));
-    var cr2=document.getElementById('d-count-hotel-rooms');if(cr2)cr2.textContent=mState.hotelRooms;
-    var brm2=document.getElementById('d-btn-hrm');if(brm2)brm2.disabled=mState.hotelRooms<=1;
-    var brp2=document.getElementById('d-btn-hrp');if(brp2)brp2.disabled=mState.hotelRooms>=mState.hotelAdults;
-  }
-  var a=mState.hotelAdults,c=mState.hotelChildren,r=mState.hotelRooms;
-  var txt=a+' Adult'+(a!==1?'s':'');
-  if(c>0)txt+=', '+c+' Child'+(c!==1?'ren':'');
-  txt+=' · '+r+' Room'+(r!==1?'s':'');
-  ['m-disp-hotel-pax','d-disp-hotel-pax'].forEach(function(id){var el=document.getElementById(id);if(el)el.textContent=txt;});
-};
 window.changeCount=function(type,delta){
   if(type==='adults'){
     paxState.adults=Math.max(1,Math.min(9,paxState.adults+delta));
@@ -2295,7 +1602,7 @@ window.setTab=function(el,type){
   var row=document.getElementById('search-row');
   var rp=document.getElementById('results-panel');
   if(rp)rp.style.display='none';
-  if(type==='hotels'){
+  if(false){
     if(tbtns)tbtns.style.display='none';
     if(extras)extras.style.display='none';
     if(row){row.style.gridTemplateColumns='1.5fr 1fr 1fr 1fr auto';row.innerHTML=buildHotelRow();}
@@ -2333,112 +1640,6 @@ window.setTab=function(el,type){
   }
 };
 
-/* ══ DESKTOP HOTEL ROW ══ */
-function buildHotelRow(){
-  return '<div class="search-field airport-wrapper" id="field-hotel-dest">'
-    +'<label>Where</label>'
-    +'<input type="text" id="input-hotel-dest" placeholder="City, region or country" autocomplete="off"'
-    +' oninput="handleHotelDestInput(this);toggleClear(\'input-hotel-dest\',\'clear-hotel\')"'
-    +' onfocus="handleHotelDestFocus(this,\'field-hotel-dest\')"'
-    +' onblur="handleHotelDestBlur(\'field-hotel-dest\')"/>'
-    +'<button class="field-clear" id="clear-hotel" onclick="clearAirport(\'input-hotel-dest\',\'dropdown-hotel\',\'clear-hotel\')" tabindex="-1">\u2715</button>'
-    +'<div class="airport-dropdown" id="dropdown-hotel"></div>'
-    +'</div>'
-    +'<div class="search-field"><label>Check-in</label><input type="date" id="hotel-checkin"/></div>'
-    +'<div class="search-field"><label>Check-out</label><input type="date" id="hotel-checkout"/></div>'
-    +'<div class="search-field" id="d-hotel-pax-trigger" onclick="toggleHotelPaxPortal()" style="cursor:pointer;user-select:none;">'
-    +'<label style="pointer-events:none">Guests &amp; Rooms</label>'
-    +'<div class="pax-display" id="d-disp-hotel-pax" style="pointer-events:none">2 Adults \xb7 1 Room</div>'
-    +'</div>'
-    +'<button class="search-btn" onclick="searchHotelsDesktop()">'
-    +'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>Search'
-    +'</button>';
-}
-
-/* ══ HOTEL DESTINATION SEARCH (Desktop dropdown) ══ */
-function handleHotelDestInput(input){
-  var q=input.value.trim();
-  var dd=document.getElementById('dropdown-hotel');
-  if(!dd)return;
-  if(!q){dd.classList.remove('open');dd.innerHTML='';return;}
-  var qu=q.toLowerCase();
-  var results=HOTEL_PLACES.filter(function(p){
-    return p.name.toLowerCase().includes(qu)||p.country.toLowerCase().includes(qu)||p.sub.toLowerCase().includes(qu);
-  }).slice(0,20);
-  if(!results.length){dd.innerHTML='<div class="dropdown-empty">No results for "'+q+'"</div>';dd.classList.add('open');return;}
-  var grouped={};
-  results.forEach(function(p){if(!grouped[p.country])grouped[p.country]=[];grouped[p.country].push(p);});
-  var html='';
-  Object.keys(grouped).forEach(function(country){
-    var items=grouped[country];
-    html+='<div class="dropdown-section-label"><span>'+items[0].flag+'</span>'+country+'</div>';
-    items.forEach(function(p){
-      var idx=HOTEL_PLACES.indexOf(p);
-      html+='<div class="airport-item" data-idx="'+idx+'" onmousedown="selectHotelDest(event,this)">'
-        +'<div class="airport-item-icon international">'+p.flag+'</div>'
-        +'<div class="airport-item-info">'
-        +'<div class="airport-item-name">'+p.name+'</div>'
-        +'<div class="airport-item-sub">'+p.sub+'</div>'
-        +'</div>'
-        +'<div class="airport-item-code" style="background:rgba(200,150,62,.08);border-color:rgba(200,150,62,.2);color:var(--gold)">🏨</div>'
-        +'</div>';
-    });
-  });
-  dd.innerHTML=html;dd.classList.add('open');
-}
-function selectHotelDest(e,el){
-  e.preventDefault();
-  var idx=parseInt(el.dataset.idx);
-  var p=HOTEL_PLACES[idx];
-  if(!p)return;
-  var inp=document.getElementById('input-hotel-dest');
-  if(inp){inp.value=p.name;inp.dataset.entity=p.entity;}
-  var dd=document.getElementById('dropdown-hotel');
-  if(dd){dd.classList.remove('open');dd.innerHTML='';}
-  var field=document.getElementById('field-hotel-dest');
-  if(field)field.classList.remove('focused');
-  var cb=document.getElementById('clear-hotel');
-  if(cb)cb.classList.add('visible');
-  // store in shared state too
-  mState.hotelDest={name:p.name,entity:p.entity};
-}
-function handleHotelDestFocus(input,fieldId){
-  var field=document.getElementById(fieldId);
-  if(field)field.classList.add('focused');
-  if(input.value.trim().length>0)handleHotelDestInput(input);
-}
-function handleHotelDestBlur(fieldId){
-  setTimeout(function(){
-    var dd=document.getElementById('dropdown-hotel');
-    if(dd){dd.classList.remove('open');dd.innerHTML='';}
-    var field=document.getElementById(fieldId);
-    if(field)field.classList.remove('focused');
-  },150);
-}
-
-window.searchHotelsDesktop=function(){
-  var d=document.getElementById('input-hotel-dest');
-  var ci=document.getElementById('hotel-checkin');
-  var co=document.getElementById('hotel-checkout');
-  var city=d?d.value.trim():'london';
-  var entity=(d&&d.dataset.entity)?d.dataset.entity:(mState.hotelDest?mState.hotelDest.entity:'');
-  var adults=mState.hotelAdults||2;
-  var children=mState.hotelChildren||0;
-  var rooms=mState.hotelRooms||1;
-  var url;
-  if(entity){
-    url='https://www.skyscanner.net/hotels/search?entity_id='+entity;
-    if(ci&&ci.value)url+='&checkin='+ci.value;
-    if(co&&co.value)url+='&checkout='+co.value;
-    url+='&adults='+adults+'&children='+children+'&rooms='+rooms;
-  } else {
-    url='https://www.skyscanner.net/hotels/'+encodeURIComponent((city||'london').toLowerCase().replace(/\s+/g,'-'))+'/';
-    if(ci&&ci.value)url+='?checkin='+ci.value;
-    if(co&&co.value)url+=(url.includes('?')?'&':'?')+'checkout='+co.value;
-  }
-  window.open(url,'_blank');
-};
-
 /* ══ DESKTOP FLIGHT URL BUILDER ══ */
 function buildFlightUrls(){
   var fromEl=document.getElementById('input-from');
@@ -2474,7 +1675,7 @@ window.openBooking=function(){window.open(buildFlightUrls().gfl,'_blank');};
 window.openExpedia=function(){window.open(buildFlightUrls().exp,'_blank');};
 
 /* ══════════════════════════════════════════
-   SHARED HOTEL GUESTS & ROOMS PANEL
+   
    Used by BOTH desktop and mobile
 ══════════════════════════════════════════ */
 var mState={
@@ -2483,10 +1684,7 @@ var mState={
   to:{code:'',display:''},
   depart:'',return:'',
   adults:1,children:0,cabin:'Economy',
-  direct:false,addHotel:false,
-  hotelDest:{name:'',entity:''},
-  hotelCheckin:'',hotelCheckout:'',
-  hotelAdults:2,hotelChildren:0,hotelRooms:1,
+  direct:false,
 };
 
 /* Open/close the shared floating Guests & Rooms panel */
@@ -2582,7 +1780,7 @@ function mOpenPanel(id){
   p.classList.add('open');
   if(id==='from'){mRenderAirports('from','');setTimeout(function(){var i=document.getElementById('m-input-from');if(i){i.value='';i.focus();}},280);}
   else if(id==='to'){mRenderAirports('to','');setTimeout(function(){var i=document.getElementById('m-input-to');if(i){i.value='';i.focus();}},280);}
-  else if(id==='hotel-dest'){mRenderHotels('');setTimeout(function(){var i=document.getElementById('m-input-hotel-dest');if(i){i.value='';i.focus();}},280);}
+  else if(id==='hotel-dest'){mRenderFlights('');setTimeout(function(){var i=document.getElementById('m-input-hotel-dest');if(i){i.value='';i.focus();}},280);}
   else if(id==='dates'){
     var dd=document.getElementById('m-date-depart');
     var dr=document.getElementById('m-date-return');
@@ -2634,15 +1832,15 @@ function mSetTab(el,tab){
   el.classList.add('active');
   mState.tab=tab;
   var ff=document.getElementById('m-fields-flights');
-  var fh=document.getElementById('m-fields-hotels');
+  var fh=null;
   var tr=document.getElementById('m-trip-row');
   var ex=document.getElementById('m-extras-flights');
   var btn=document.getElementById('m-search-btn');
   if(ff)ff.style.display=tab==='flights'?'':'none';
-  if(fh)fh.style.display=tab==='hotels'?'':'none';
+  if(fh)fh.style.display='none';
   if(tr)tr.style.display=tab==='flights'?'':'none';
   if(ex)ex.style.display=tab==='flights'?'':'none';
-  if(btn)btn.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" width="18" height="18"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg> Search '+(tab==='hotels'?'Hotels':'Flights');
+  if(btn)btn.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" width="18" height="18"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg> Search Flights';
 }
 
 function mSetTrip(type){
@@ -2658,9 +1856,7 @@ function mSetTrip(type){
 
 function mToggleExtra(key){
   if(key==='direct')mState.direct=!mState.direct;
-  else mState.addHotel=!mState.addHotel;
   var el=document.getElementById('m-extra-'+key);
-  if(el)el.classList.toggle('active',key==='direct'?mState.direct:mState.addHotel);
 }
 
 /* Airport list rendering */
@@ -2732,21 +1928,6 @@ function mUpdateDates(){
   if(mState.trip==='oneway'&&mState.depart){setTimeout(function(){mClosePanel('dates');},300);}
   else if(mState.trip==='return'&&mState.depart&&mState.return){setTimeout(function(){mClosePanel('dates');},300);}
 }
-function mUpdateHotelDates(){
-  var ci=document.getElementById('m-hotel-checkin');
-  var co=document.getElementById('m-hotel-checkout');
-  if(ci)mState.hotelCheckin=ci.value;
-  if(co)mState.hotelCheckout=co.value;
-  var el=document.getElementById('m-disp-hotel-dates');
-  if(!el)return;
-  if(mState.hotelCheckin){
-    var txt=mState.hotelCheckout?fmtHuman(mState.hotelCheckin)+' – '+fmtHuman(mState.hotelCheckout):fmtHuman(mState.hotelCheckin);
-    el.textContent=txt;el.classList.remove('ph');
-  } else {
-    el.textContent='Add dates';el.classList.add('ph');
-  }
-  if(mState.hotelCheckin&&mState.hotelCheckout){setTimeout(function(){mClosePanel('hotel-dates');},300);}
-}
 
 /* Pax (flight passengers - mobile) */
 function mChangePax(type,delta){
@@ -2776,100 +1957,9 @@ function mUpdatePax(){
   if(el)el.textContent=txt;
 }
 
-function mChangeHotelPax(type,delta){
-  if(type==='adults'){
-    mState.hotelAdults=Math.max(1,Math.min(30,mState.hotelAdults+delta));
-    if(mState.hotelRooms>mState.hotelAdults)mState.hotelRooms=mState.hotelAdults;
-    var ca=document.getElementById('m-cnt-hotel-adults');
-    var bm=document.getElementById('m-btn-ham');var bp=document.getElementById('m-btn-hap');
-    if(ca)ca.textContent=mState.hotelAdults;
-    if(bm)bm.disabled=mState.hotelAdults<=1;
-    if(bp)bp.disabled=mState.hotelAdults>=30;
-    var rm=document.getElementById('m-btn-hrm');var rp=document.getElementById('m-btn-hrp');
-    if(rm)rm.disabled=mState.hotelRooms<=1;
-    if(rp)rp.disabled=mState.hotelRooms>=mState.hotelAdults;
-  } else if(type==='children'){
-    mState.hotelChildren=Math.max(0,Math.min(10,mState.hotelChildren+delta));
-    var cc=document.getElementById('m-cnt-hotel-children');
-    var bcm=document.getElementById('m-btn-hcm');var bcp=document.getElementById('m-btn-hcp');
-    if(cc)cc.textContent=mState.hotelChildren;
-    if(bcm)bcm.disabled=mState.hotelChildren<=0;
-    if(bcp)bcp.disabled=mState.hotelChildren>=10;
-  } else if(type==='rooms'){
-    var next=mState.hotelRooms+delta;
-    if(next>mState.hotelAdults)return;
-    mState.hotelRooms=Math.max(1,Math.min(30,next));
-    var cr=document.getElementById('m-cnt-hotel-rooms');
-    var brm=document.getElementById('m-btn-hrm');var brp=document.getElementById('m-btn-hrp');
-    if(cr)cr.textContent=mState.hotelRooms;
-    if(brm)brm.disabled=mState.hotelRooms<=1;
-    if(brp)brp.disabled=mState.hotelRooms>=mState.hotelAdults;
-  }
-  var a=mState.hotelAdults,c=mState.hotelChildren,r=mState.hotelRooms;
-  var txt=a+' Adult'+(a!==1?'s':'');
-  if(c>0)txt+=', '+c+' Child'+(c!==1?'ren':'');
-  txt+=' · '+r+' Room'+(r!==1?'s':'');
-  var els=['m-disp-hotel-pax','d-disp-hotel-pax'];
-  els.forEach(function(id){var el=document.getElementById(id);if(el)el.textContent=txt;});
-}
-
-/* Hotel destination (mobile) */
-function mRenderHotels(q){
-  var el=document.getElementById('m-hotel-dest-list');
-  if(!el)return;
-  var places;
-  if(!q||q.trim()===''){
-    places=POPULAR_HOTELS.map(function(n){return HOTEL_PLACES.find(function(p){return p.name===n;});}).filter(Boolean);
-    el.innerHTML='<div class="m-section-label">⭐ Popular destinations</div>'
-      +places.map(function(p){
-        var idx=HOTEL_PLACES.indexOf(p);
-        return '<div class="m-airport-item" data-idx="'+idx+'" onclick="mSelectHotelByIdx(this)">'
-          +'<div class="m-airport-icon">'+p.flag+'</div>'
-          +'<div class="m-airport-info"><div class="m-airport-name">'+p.name+'</div><div class="m-airport-sub">'+p.sub+'</div></div>'
-          +'<div class="m-airport-code" style="background:rgba(200,150,62,.1);border-color:rgba(200,150,62,.2);color:var(--gold2);font-size:11px;padding:3px 7px;">🏨</div>'
-          +'</div>';
-      }).join('');
-    return;
-  }
-  var qu=q.trim().toLowerCase();
-  places=HOTEL_PLACES.filter(function(p){
-    return p.name.toLowerCase().includes(qu)||p.country.toLowerCase().includes(qu)||p.sub.toLowerCase().includes(qu);
-  }).slice(0,30);
-  if(!places.length){
-    el.innerHTML='<div style="padding:28px 16px;text-align:center;color:var(--text3);font-size:14px;">🔍 No results for <strong style="color:#fff">'+q+'</strong></div>';
-    return;
-  }
-  var grouped={};
-  places.forEach(function(p){if(!grouped[p.country])grouped[p.country]=[];grouped[p.country].push(p);});
-  var html='';
-  Object.keys(grouped).forEach(function(country){
-    var items=grouped[country];
-    html+='<div class="m-section-label">'+items[0].flag+' '+country+'</div>';
-    items.forEach(function(p){
-      var idx=HOTEL_PLACES.indexOf(p);
-      html+='<div class="m-airport-item" data-idx="'+idx+'" onclick="mSelectHotelByIdx(this)">'
-        +'<div class="m-airport-icon">'+p.flag+'</div>'
-        +'<div class="m-airport-info"><div class="m-airport-name">'+p.name+'</div><div class="m-airport-sub">'+p.sub+'</div></div>'
-        +'<div class="m-airport-code" style="background:rgba(200,150,62,.1);border-color:rgba(200,150,62,.2);color:var(--gold2);font-size:11px;padding:3px 7px;">🏨</div>'
-        +'</div>';
-    });
-  });
-  el.innerHTML=html;
-}
-function mFilterHotels(q){mRenderHotels(q);}
-function mSelectHotelByIdx(el){
-  var idx=parseInt(el.dataset.idx);
-  var p=HOTEL_PLACES[idx];
-  if(!p)return;
-  mState.hotelDest={name:p.name,entity:p.entity};
-  var disp=document.getElementById('m-disp-hotel-dest');
-  if(disp){disp.textContent=p.name;disp.classList.remove('ph');}
-  mClosePanel('hotel-dest');
-}
-
 /* Mobile search action */
 function mDoSearch(){
-  if(mState.tab==='hotels'){
+  if(false){
     var url=mBuildHotelUrl();
     window.open(url,'_blank');
     showToast('Opening hotel search…');
@@ -2895,21 +1985,6 @@ function mBuildFlightUrls(){
   var gfl='https://www.google.com/travel/flights?q=Flights+from+'+from+'+to+'+to+'+on+'+dISO+(isReturn&&rISO?'+returning+'+rISO:'')+'&curr=GBP';
   var exp='https://www.expedia.co.uk/Flights-Search?leg1=from%3A'+from+'%2Cto%3A'+to+'%2Cdeparture%3A'+dISO.replace(/-/g,'%2F')+'TANYT&passengers=adults%3A'+mState.adults+'&trip='+(isReturn?'roundtrip':'oneway')+'&mode=search';
   return{sky:sky,gfl:gfl,exp:exp};
-}
-function mBuildHotelUrl(){
-  var entity=mState.hotelDest.entity;
-  var city=mState.hotelDest.name;
-  var a=mState.hotelAdults,c=mState.hotelChildren,r=mState.hotelRooms;
-  var url;
-  if(entity){
-    url='https://www.skyscanner.net/hotels/search?entity_id='+entity;
-    if(mState.hotelCheckin)url+='&checkin='+mState.hotelCheckin;
-    if(mState.hotelCheckout)url+='&checkout='+mState.hotelCheckout;
-    url+='&adults='+a+'&children='+c+'&rooms='+r;
-  } else {
-    url='https://www.skyscanner.net/hotels/'+encodeURIComponent((city||'london').toLowerCase().replace(/\s+/g,'-'))+'/';
-  }
-  return url;
 }
 function mOpenSky(){window.open(mBuildFlightUrls().sky,'_blank');}
 function mOpenGfl(){window.open(mBuildFlightUrls().gfl,'_blank');}
@@ -2996,7 +2071,7 @@ document.addEventListener('click',function(e){
     if(portal)portal.classList.remove('open');
     if(field)field.classList.remove('open');
   }
-  /* close shared hotel guests/rooms panel */
+  /*  */
   if(!e.target.closest('#m-hotel-pax-trigger')&&!e.target.closest('#d-hotel-pax-trigger')&&!e.target.closest('#hpd-panel')&&!e.target.closest('#hotel-pax-portal')){
     closeHotelPaxPortal();
     hpdClose();
@@ -3004,7 +2079,7 @@ document.addEventListener('click',function(e){
 });
 </script>
 
-<!-- SHARED HOTEL GUESTS & ROOMS PANEL -->
+<!--  -->
 <div id="hpd-panel" onclick="event.stopPropagation()" style="display:none;position:fixed;z-index:99998;">
   <div class="hpd-wrap">
     <div class="hpd-header">Guests &amp; Rooms</div>
